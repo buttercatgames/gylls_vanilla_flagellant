@@ -1,0 +1,32 @@
+
+-------------------------------------------------------------------------------
+Parsing project file - C:\Program Files (x86)\Darkest Dungeon\mods\gylls_vanilla_flagellant\project.xml
+Mod Data Directory = C:/Program Files (x86)/Darkest Dungeon/mods/gylls_vanilla_flagellant/
+
+-------------------------------------------------------------------------------
+Processing Map Files files...
+
+-------------------------------------------------------------------------------
+Searching for preview icon file C:/Program Files (x86)/Darkest Dungeon/mods/gylls_vanilla_flagellant/preview_icon.png...FOUND!
+<UploadMode> - Set to copy_and_upload
+
+
+No unchanged files detected, directly uploading data directory.
+
+-------------------------------------------------------------------------------
+Modded files...
+
+heroes/flagellant/flagellant.ability.endure.png
+heroes/flagellant/flagellant.ability.suffer.png
+heroes/flagellant/flagellant.art.darkest
+heroes/flagellant/flagellant.info.darkest
+raid/camping/crimson_court.camping_skills.json
+scripts/layout/gv_heroes_flagellant.popup_text.layout.darkest
+shared/buffs/gv_heroes_flagellant.buffs.json
+effects/gv_heroes_flagellant.effects.darkest
+preview_icon.png
+project.xml
+
+Submitting........................................................................................................Submitted.
+Saving project file C:\Program Files (x86)\Darkest Dungeon\mods\gylls_vanilla_flagellant\project.xml
+

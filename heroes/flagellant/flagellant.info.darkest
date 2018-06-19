@@ -1,0 +1,78 @@
+resistances: .stun 50% .poison 30% .bleed 10% .disease 40% .move 50% .debuff 30% .death_blow 67% .trap 0%
+
+weapon: .name "flagellant_weapon_0" .atk 0% .dmg 3 6 .crit 2.5% .spd 5
+weapon: .name "flagellant_weapon_1" .atk 0% .dmg 4 7 .crit 3% .spd 5 .upgradeRequirementCode 0
+weapon: .name "flagellant_weapon_2" .atk 0% .dmg 4 8 .crit 3.5% .spd 6 .upgradeRequirementCode 1
+weapon: .name "flagellant_weapon_3" .atk 0% .dmg 5 10 .crit 4% .spd 6 .upgradeRequirementCode 2
+weapon: .name "flagellant_weapon_4" .atk 0% .dmg 5 11 .crit 4.5% .spd 7 .upgradeRequirementCode 3
+
+armour: .name "flagellant_armour_0" .def 0% .prot 0 .hp 22 .spd 0
+armour: .name "flagellant_armour_1" .def 5% .prot 0 .hp 26 .spd 0 .upgradeRequirementCode 0
+armour: .name "flagellant_armour_2" .def 10% .prot 0 .hp 30 .spd 0 .upgradeRequirementCode 1
+armour: .name "flagellant_armour_3" .def 15% .prot 0 .hp 34 .spd 0 .upgradeRequirementCode 2
+armour: .name "flagellant_armour_4" .def 20% .prot 0 .hp 38 .spd 0 .upgradeRequirementCode 3
+
+// Punish
+combat_skill: .id "punish" .level 0 .type "melee" .atk 95% .dmg 0% .crit 2% .launch 21 .target 123 .is_crit_valid True .effect "Punish Bleed 1" "Punish Bleed Debuff 1" .generation_guaranteed true
+combat_skill: .id "punish" .level 1 .type "melee" .atk 100% .dmg 0% .crit 2% .launch 12 .target 123 .is_crit_valid True .effect "Punish Bleed 2" "Punish Bleed Debuff 2"
+combat_skill: .id "punish" .level 2 .type "melee" .atk 105% .dmg 0% .crit 3% .launch 12 .target 123 .is_crit_valid True .effect "Punish Bleed 3" "Punish Bleed Debuff 3"
+combat_skill: .id "punish" .level 3 .type "melee" .atk 110% .dmg 0% .crit 3% .launch 12 .target 123 .is_crit_valid True .effect "Punish Bleed 4" "Punish Bleed Debuff 4"
+combat_skill: .id "punish" .level 4 .type "melee" .atk 115% .dmg 0% .crit 4% .launch 12 .target 123 .is_crit_valid True .effect "Punish Bleed 5" "Punish Bleed Debuff 5"
+
+// Rain of Sorrows
+combat_skill: .id "rain_of_sorrows" .level 0 .type "melee" .atk 95% .dmg -90% .crit 0% .launch ~43 .target ~12 .is_crit_valid True .effect "Strong Bleed 1" "GV_Flag_Bleed_Self_1"
+combat_skill: .id "rain_of_sorrows" .level 1 .type "melee" .atk 100% .dmg -90% .crit 0% .launch ~43 .target ~12 .is_crit_valid True .effect "Strong Bleed 2" "GV_Flag_Bleed_Self_2"
+combat_skill: .id "rain_of_sorrows" .level 2 .type "melee" .atk 105% .dmg -90% .crit 1% .launch ~43 .target ~12 .is_crit_valid True .effect "Strong Bleed 3" "GV_Flag_Bleed_Self_3"
+combat_skill: .id "rain_of_sorrows" .level 3 .type "melee" .atk 110% .dmg -90% .crit 1% .launch ~43 .target ~12 .is_crit_valid True .effect "Strong Bleed 4" "GV_Flag_Bleed_Self_4"
+combat_skill: .id "rain_of_sorrows" .level 4 .type "melee" .atk 115% .dmg -90% .crit 2% .launch ~43 .target ~12 .is_crit_valid True .effect "Strong Bleed 5" "GV_Flag_Bleed_Self_5"
+
+// Exsanguinate
+combat_skill: .id "exsanguinate" .level 0 .type "melee" .atk 90% .dmg -50% .crit 0% .launch 12 .target 12 .is_crit_valid True .effect "GV_Flag_Bleed_Buffs_1" "GV_Flag_Super_Bleed_1" "GV_Flag_Exsang_Heal_Self_1"
+combat_skill: .id "exsanguinate" .level 1 .type "melee" .atk 95% .dmg -50% .crit 0% .launch 12 .target 12 .is_crit_valid True .effect "GV_Flag_Bleed_Buffs_2" "GV_Flag_Super_Bleed_1" "GV_Flag_Exsang_Heal_Self_2"
+combat_skill: .id "exsanguinate" .level 2 .type "melee" .atk 100% .dmg -50% .crit 1% .launch 12 .target 12 .is_crit_valid True .effect "GV_Flag_Bleed_Buffs_3" "GV_Flag_Super_Bleed_2" "GV_Flag_Exsang_Heal_Self_2"
+combat_skill: .id "exsanguinate" .level 3 .type "melee" .atk 105% .dmg -50% .crit 1% .launch 12 .target 12 .is_crit_valid True .effect "GV_Flag_Bleed_Buffs_4" "GV_Flag_Super_Bleed_2" "GV_Flag_Exsang_Heal_Self_3"
+combat_skill: .id "exsanguinate" .level 4 .type "melee" .atk 110% .dmg -50% .crit 2% .launch 12 .target 12 .is_crit_valid True .effect "GV_Flag_Bleed_Buffs_5" "GV_Flag_Super_Bleed_3" "GV_Flag_Exsang_Heal_Self_3"
+
+// Reclaim
+combat_skill: .id "reclaim" .level 0 .launch 1234 .target @1234 .self_target_valid false .is_crit_valid False .effect "GV_Flag_Hot_1" "GV_Flag_Bleed_Self_1"
+combat_skill: .id "reclaim" .level 1 .launch 1234 .target @1234 .self_target_valid false .is_crit_valid False .effect "GV_Flag_Hot_1" "GV_Flag_Maybe_Hot" "GV_Flag_Bleed_Self_2"
+combat_skill: .id "reclaim" .level 2 .launch 1234 .target @1234 .self_target_valid false .is_crit_valid False .effect "GV_Flag_Hot_2" "GV_Flag_Bleed_Self_3"
+combat_skill: .id "reclaim" .level 3 .launch 1234 .target @1234 .self_target_valid false .is_crit_valid False .effect "GV_Flag_Hot_2" "GV_Flag_Maybe_Hot" "GV_Flag_Bleed_Self_4"
+combat_skill: .id "reclaim" .level 4 .launch 1234 .target @1234 .self_target_valid false .is_crit_valid False .effect "GV_Flag_Hot_3" "GV_Flag_Bleed_Self_5"
+
+// Redeem
+combat_skill: .id "redeem" .level 0 .heal 1 1 .launch 1234 .target @1234 .is_crit_valid True .effect "GV_Flag_Healing_Buff"
+combat_skill: .id "redeem" .level 1 .heal 1 2 .launch 1234 .target @1234 .is_crit_valid True .effect "GV_Flag_Healing_Buff"
+combat_skill: .id "redeem" .level 2 .heal 2 2 .launch 1234 .target @1234 .is_crit_valid True .effect "GV_Flag_Healing_Buff"
+combat_skill: .id "redeem" .level 3 .heal 2 3 .launch 1234 .target @1234 .is_crit_valid True .effect "GV_Flag_Healing_Buff"
+combat_skill: .id "redeem" .level 4 .heal 3 3 .launch 1234 .target @1234 .is_crit_valid True .effect "GV_Flag_Healing_Buff"
+
+// Endure
+combat_skill: .id "endure" .level 0 .launch 1234 .target .is_crit_valid True .required_performer_hp_range 0 0.4 .effect "GV_Flag_Endure_Buffs" "GV_Flag_Heal_Self" "GV_Flag_Stress_Heal_Self_1"
+combat_skill: .id "endure" .level 1 .launch 1234 .target .is_crit_valid True .required_performer_hp_range 0 0.4 .effect "GV_Flag_Endure_Buffs" "GV_Flag_Heal_Self" "GV_Flag_Stress_Heal_Self_2"
+combat_skill: .id "endure" .level 2 .launch 1234 .target .is_crit_valid True .required_performer_hp_range 0 0.4 .effect "GV_Flag_Endure_Buffs" "GV_Flag_Heal_Self" "GV_Flag_Stress_Heal_Self_3"
+combat_skill: .id "endure" .level 3 .launch 1234 .target .is_crit_valid True .required_performer_hp_range 0 0.4 .effect "GV_Flag_Endure_Buffs" "GV_Flag_Heal_Self" "GV_Flag_Stress_Heal_Self_4"
+combat_skill: .id "endure" .level 4 .launch 1234 .target .is_crit_valid True .required_performer_hp_range 0 0.4 .effect "GV_Flag_Endure_Buffs" "GV_Flag_Heal_Self" "GV_Flag_Stress_Heal_Self_5"
+
+// Suffer
+combat_skill: .id "suffer" .level 0 .launch 1234 .target @1234 .self_target_valid false .is_crit_valid False .effect "Clear Marked Target" "Mark Self" "Flag Steal Bleed" "Flag Steal Blight" "Flag Grit 1"
+combat_skill: .id "suffer" .level 1 .launch 1234 .target @1234 .self_target_valid false .is_crit_valid False .effect "Clear Marked Target" "Mark Self" "Flag Steal Bleed" "Flag Steal Blight" "Flag Grit 2"
+combat_skill: .id "suffer" .level 2 .launch 1234 .target @1234 .self_target_valid false .is_crit_valid False .effect "Clear Marked Target" "Mark Self" "Flag Steal Bleed" "Flag Steal Blight" "Flag Grit 3"
+combat_skill: .id "suffer" .level 3 .launch 1234 .target @1234 .self_target_valid false .is_crit_valid False .effect "Clear Marked Target" "Mark Self" "Flag Steal Bleed" "Flag Steal Blight" "Flag Grit 4"
+combat_skill: .id "suffer" .level 4 .launch 1234 .target @1234 .self_target_valid false .is_crit_valid False .effect "Clear Marked Target" "Mark Self" "Flag Steal Bleed" "Flag Steal Blight" "Flag Grit 5"
+
+combat_move_skill: .id "move" .level 0 .type "move" .move 1 2 .launch 4321
+
+tag: .id "religious"
+tag: .id "light"
+tag: .id "flagellant"
+tag: .id "altar_of_light"
+
+deaths_door: .buffs .recovery_buffs .recovery_heart_attack_buffs heartattackACCDebuff heartattackDMGLowDebuff heartattackDMGHighDebuff heartattackSPDDebuff heartattackSRDebuff .enter_effects flagellant_death_door_enter .enter_effect_round_cooldown 1
+controlled: .target_rank 1
+id_index: .index 16
+skill_selection: .can_select_combat_skills true .number_of_selected_combat_skills_max 4
+overstressed_modifier: .override_trait_type_ids berserk .override_trait_type_chances 1.0
+activity_modifier: .override_valid_activity_ids flagellation treatment disease_treatment .override_stress_removal_amount_low 100 .override_stress_removal_amount_high 100
+quirk_modifier: .incompatible_class_ids alcoholism gambler love_interest enlightened god_fearing resolution known_cheat deviant_tastes flagellant unquiet_mind witness faithless bad_gambler skilled_gambler improved_balance meditator calm nymphomania
+generation: .is_generation_enabled true .town_event_dependency "first_flagellant" .number_of_positive_quirks_min 1 .number_of_positive_quirks_max 2 .number_of_negative_quirks_min 1 .number_of_negative_quirks_max 2 .number_of_class_specific_camping_skills 2 .number_of_shared_camping_skills 1 .number_of_random_combat_skills 4 .number_of_cards_in_deck 5 .card_chance 1.0
