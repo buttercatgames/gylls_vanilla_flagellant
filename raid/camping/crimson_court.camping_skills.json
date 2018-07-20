@@ -83,7 +83,7 @@
 		{ 
 			"id" : "lash_kiss",
 			"level" : 0,
-			"cost" : 2,
+			"cost" : 3,
 			"use_limit" : 1,
 			"effects" :
 			[
@@ -140,7 +140,7 @@
 		{ 
 			"id" : "lash_cure",
 			"level" : 0,
-			"cost" : 1,
+			"cost" : 2,
 			"use_limit" : 1,
 			"effects" :
 			[

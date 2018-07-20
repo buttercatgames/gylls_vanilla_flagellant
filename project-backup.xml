@@ -2,11 +2,11 @@
 <project>
 	<PreviewIconFile>preview_icon.png</PreviewIconFile>
 	<ItemDescriptionShort>Gyll’s Vanilla: Flagellant reworks the Flagellant into a versatile healer and bleed-based damage dealer, with fewer special mechanics and less reliance on situational self-heal skills.</ItemDescriptionShort>
-	<ModDataPath>C:/DarkestDungeon/mods/gylls_vanilla_flagellant/</ModDataPath>
+	<ModDataPath>C:/Program Files (x86)/Darkest Dungeon/mods/gylls_vanilla_flagellant/</ModDataPath>
 	<Title>Gyll&apos;s Vanilla: Flagellant</Title>
 	<Language>english</Language>
 	<UpdateDetails/>
-	<Visibility>private</Visibility>
+	<Visibility>public</Visibility>
 	<UploadMode>copy_and_upload</UploadMode>
 	<VersionMajor>0</VersionMajor>
 	<VersionMinor>0</VersionMinor>
@@ -33,6 +33,6 @@
 [h1]Disclaimer[/h1]
 [i]Gyll’s Vanilla: Flagellant is not an official Red Hook Studios product or product modification, and Red Hook Studios Inc. is not responsible in any way for changes or damages that may result from using the mod. Furthermore, “Darkest Dungeon” and the Darkest Dungeon logo are trademarks of Red Hook Studios Inc. All content in the game is Copyright Red Hook Studios Inc. All rights reserved.[/i]
 	</ItemDescription>
-	<PublishedFileId>1445670072</PublishedFileId>
+	<PublishedFileId>1408032394</PublishedFileId>
 </project>
 
