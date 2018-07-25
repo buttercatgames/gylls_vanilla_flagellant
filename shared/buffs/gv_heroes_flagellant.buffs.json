@@ -2,6 +2,84 @@
    "buffs":
    [
       {
+         "id" : "GV_Flag_Low_Spd",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "speed_rating",
+         "amount" : 1,
+         "remove_if_not_active" : true,
+         "rule_type" : "hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.4,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_Flag_Low_Crit",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.02,
+         "remove_if_not_active" : true,
+         "rule_type" : "hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.4,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_Flag_Low_Bleed",
+         "stat_type" : "bleed_chance",
+         "stat_sub_type" : "",
+         "amount" : 0.2,
+         "remove_if_not_active" : true,
+         "rule_type" : "hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.4,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_Flag_Mega_Low_Spd",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "speed_rating",
+         "amount" : 1,
+         "remove_if_not_active" : true,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_Flag_Mega_Low_Crit",
+         "stat_type" : "combat_stat_add",
+         "stat_sub_type" : "crit_chance",
+         "amount" : 0.02,
+         "remove_if_not_active" : true,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_Flag_Mega_Low_Bleed",
+         "stat_type" : "bleed_chance",
+         "stat_sub_type" : "",
+         "amount" : 0.2,
+         "remove_if_not_active" : true,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+	  {
          "id" : "GV_Flag_Bleed_Bleeder_1",
          "stat_type" : "bleed_chance",
          "stat_sub_type" : "",
@@ -141,6 +219,32 @@
          "is_false_rule" : false,
          "rule_data" : {
             "float" : 0.2,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_Flag_Buff_Exsang_Bleed_1",
+         "stat_type" : "hp_dot_bleed_amount_percent",
+         "stat_sub_type" : "",
+         "amount" : 0.5,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_Flag_Buff_Exsang_Bleed_2",
+         "stat_type" : "hp_dot_bleed_amount_percent",
+         "stat_sub_type" : "",
+         "amount" : 1.0,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
             "string" : ""
          }
       },
@@ -313,6 +417,32 @@
             "string" : "bleeding"
          }
       },
+      {
+         "id" : "GV_Flag_Exsang_Low_Healer",
+         "stat_type" : "hp_heal_percent",
+         "stat_sub_type" : "",
+         "amount" : -0.25,
+         "remove_if_not_active" : false,
+         "rule_type" : "hpabove",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.4,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_Flag_Exsang_Mega_Low_Healer",
+         "stat_type" : "hp_heal_percent",
+         "stat_sub_type" : "",
+         "amount" : -0.5,
+         "remove_if_not_active" : false,
+         "rule_type" : "hpabove",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.2,
+            "string" : ""
+         }
+      },
 	  {
          "id" : "GV_Flag_Disable_Exsang",
          "stat_type" : "disable_combat_skill_attribute",
@@ -326,6 +456,123 @@
             "string" : ""
          },
 		 "is_clear_debuff_valid": false
+      },
+	  {
+         "id" : "GV_Tooltip_Flag_Transfer_Dots",
+         "stat_type" : "upgrade_discount",
+         "stat_sub_type" : "gv_flag_transfer_dots",
+         "amount" : 0,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+	  {
+         "id" : "GV_Tooltip_Flag_Buff_Exsang_Bleed",
+         "stat_type" : "upgrade_discount",
+         "stat_sub_type" : "gv_flag_buff_exsang_bleed",
+         "amount" : 1,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+	  {
+         "id" : "GV_Tooltip_Flag_Exsang_Bleed_1",
+         "stat_type" : "upgrade_discount",
+         "stat_sub_type" : "gv_flag_exsang_bleed_1",
+         "amount" : 1,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+	  {
+         "id" : "GV_Tooltip_Flag_Exsang_Bleed_2",
+         "stat_type" : "upgrade_discount",
+         "stat_sub_type" : "gv_flag_exsang_bleed_2",
+         "amount" : 1,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+	  {
+         "id" : "GV_Tooltip_Flag_Exsang_Bleed_3",
+         "stat_type" : "upgrade_discount",
+         "stat_sub_type" : "gv_flag_exsang_bleed_3",
+         "amount" : 1,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+	  {
+         "id" : "GV_Tooltip_Flag_Exsang_Bleed_4",
+         "stat_type" : "upgrade_discount",
+         "stat_sub_type" : "gv_flag_exsang_bleed_4",
+         "amount" : 1,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+	  {
+         "id" : "GV_Tooltip_Flag_Exsang_Bleed_5",
+         "stat_type" : "upgrade_discount",
+         "stat_sub_type" : "gv_flag_exsang_bleed_5",
+         "amount" : 1,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+	  {
+         "id" : "GV_Tooltip_Flag_Exsang_Self_Effects",
+         "stat_type" : "upgrade_discount",
+         "stat_sub_type" : "gv_flag_exsang_self_effects",
+         "amount" : 1,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+	  {
+         "id" : "GV_Tooltip_Flag_Exsang_Mods",
+         "stat_type" : "upgrade_discount",
+         "stat_sub_type" : "gv_flag_exsang_mods",
+         "amount" : 1,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
       }
 	]
 }

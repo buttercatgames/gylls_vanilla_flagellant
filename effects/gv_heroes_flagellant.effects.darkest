@@ -2,23 +2,25 @@
 //-------------------------
 
 // Punish
-effect: .name "GV_Flag_Buff_Exsang" .target "performer" .chance 100% .buff_ids "GV_Flag_Buff_Exsang_Bleed" "GV_Flag_Buff_Exsang_Extra_Heal" .duration 4 .on_hit true .on_miss false
+effect: .name "GV_Flag_Buff_Exsang" .target "performer" .chance 100% .buff_ids "GV_Flag_Buff_Exsang_Bleed" .duration 4 .on_hit true .on_miss false .has_description false
 
 // Rain of Sorrows
 
 
 // Exsanguinate
-effect: .name "GV_Flag_Super_Bleed_1" .target "target" .chance 100% .dotBleed 2 .duration 3 .on_hit true .on_miss false .queue true .can_apply_on_death true
-effect: .name "GV_Flag_Super_Bleed_2" .target "target" .chance 110% .dotBleed 2 .duration 3 .on_hit true .on_miss false .queue true .can_apply_on_death true
-effect: .name "GV_Flag_Super_Bleed_3" .target "target" .chance 120% .dotBleed 3 .duration 3 .on_hit true .on_miss false .queue true .can_apply_on_death true
-effect: .name "GV_Flag_Super_Bleed_4" .target "target" .chance 130% .dotBleed 3 .duration 3 .on_hit true .on_miss false .queue true .can_apply_on_death true
-effect: .name "GV_Flag_Super_Bleed_5" .target "target" .chance 140% .dotBleed 4 .duration 3 .on_hit true .on_miss false .queue true .can_apply_on_death true
+effect: .name "GV_Flag_Super_Bleed_1" .target "target" .chance 100% .dotBleed 2 .duration 3 .on_hit true .on_miss false .can_apply_on_death true .has_description false
+effect: .name "GV_Flag_Super_Bleed_2" .target "target" .chance 110% .dotBleed 2 .duration 3 .on_hit true .on_miss false .can_apply_on_death true .has_description false
+effect: .name "GV_Flag_Super_Bleed_3" .target "target" .chance 120% .dotBleed 2 .duration 3 .on_hit true .on_miss false .can_apply_on_death true .has_description false
+effect: .name "GV_Flag_Super_Bleed_4" .target "target" .chance 130% .dotBleed 2 .duration 3 .on_hit true .on_miss false .can_apply_on_death true .has_description false
+effect: .name "GV_Flag_Super_Bleed_5" .target "target" .chance 140% .dotBleed 2 .duration 3 .on_hit true .on_miss false .can_apply_on_death true .has_description false
 
-effect: .name "GV_Flag_Exsang_Heal_Self" .target "performer" .chance 100% .heal 1 .on_hit true .on_miss false .source_heal_type hero_skill .queue true
+effect: .name "GV_Flag_Instant_Buffs_1" .target "performer" .chance 100% .skill_instant true .buff_ids "GV_Flag_Exsang_Low_Healer" "GV_Flag_Exsang_Mega_Low_Healer" .on_hit true .on_miss false .has_description false
+effect: .name "GV_Flag_Instant_Buffs_2" .target "performer" .chance 100% .skill_instant true .buff_ids "GV_Flag_Exsang_Low_Healer" "GV_Flag_Exsang_Mega_Low_Healer" "GV_Flag_Buff_Exsang_Bleed_1" .on_hit true .on_miss false .has_description false
+effect: .name "GV_Flag_Instant_Buffs_3" .target "performer" .chance 100% .skill_instant true .buff_ids "GV_Flag_Exsang_Low_Healer" "GV_Flag_Exsang_Mega_Low_Healer" "GV_Flag_Buff_Exsang_Bleed_2" .on_hit true .on_miss false .has_description false
 
-effect: .name "GV_Flag_Exsang_Bleed_Healer" .target "performer" .chance 100% .skill_instant true .buff_ids "GV_Flag_Exsang_Bleed_Healer" .on_hit true .on_miss false
+effect: .name "GV_Flag_Exsang_Heal_Self" .target "performer" .chance 100% .heal_percent 0.40 .on_hit true .on_miss false .source_heal_type hero_skill .has_description false
 
-effect: .name "GV_Flag_Disable_Exsang" .target "performer" .chance 100% .buff_ids "GV_Flag_Disable_Exsang" .duration 2 .on_hit true .on_miss false
+effect: .name "GV_Flag_Disable_Exsang" .target "performer" .chance 100% .buff_ids "GV_Flag_Disable_Exsang" .duration 3 .on_hit true .on_miss false .has_description false
 
 // Reclaim
 effect: .name "GV_Flag_Hot_1" .target "target" .chance 100% .dotHpHeal 3 .duration 2 .on_hit true .on_miss false
@@ -31,7 +33,7 @@ effect: .name "GV_Flag_Maybe_Hot" .target "target" .chance 50% .dotHpHeal 1 .dur
 effect: .name "GV_Flag_Healing_Buff" .target "target" .chance 100% .buff_ids "GV_Flag_Healing_Buff" "GV_Flag_Healing_Buff_Low" "GV_Flag_Healing_Buff_Mega_Low" .duration 3 .on_hit true .on_miss false
 
 // Endure
-effect: .name "GV_Flag_Endure_Buffs" .target "performer" .chance 100% .skill_instant true .buff_ids "GV_Flag_Super_Heal" "GV_Flag_Super_Stress_Heal" .on_hit true .on_miss false
+effect: .name "GV_Flag_Endure_Buffs" .target "performer" .chance 100% .skill_instant true .buff_ids "GV_Flag_Super_Heal" .on_hit true .on_miss false
 
 effect: .name "GV_Flag_Stress_Heal_Self_1" .target "performer" .chance 100% .healstress 4 .on_hit true .on_miss false .queue true
 effect: .name "GV_Flag_Stress_Heal_Self_2" .target "performer" .chance 100% .healstress 5 .on_hit true .on_miss false .queue true
@@ -42,11 +44,14 @@ effect: .name "GV_Flag_Stress_Heal_Self_5" .target "performer" .chance 100% .hea
 effect: .name "GV_Flag_Heal_Self" .target "performer" .chance 100% .heal_percent 0.20 .on_hit true .on_miss false .queue true
 
 // Suffer
-effect: .name "GV_Flag_Suffer_Buffs_1" .target "performer" .chance 100% .buff_ids "GV_Flag_DB_Resist_1" "GV_Flag_Damage_Reduced_1" .duration 3 .on_hit true .on_miss false
-effect: .name "GV_Flag_Suffer_Buffs_2" .target "performer" .chance 100% .buff_ids "GV_Flag_DB_Resist_2" "GV_Flag_Damage_Reduced_2" .duration 3 .on_hit true .on_miss false
-effect: .name "GV_Flag_Suffer_Buffs_3" .target "performer" .chance 100% .buff_ids "GV_Flag_DB_Resist_3" "GV_Flag_Damage_Reduced_3" .duration 3 .on_hit true .on_miss false
-effect: .name "GV_Flag_Suffer_Buffs_4" .target "performer" .chance 100% .buff_ids "GV_Flag_DB_Resist_4" "GV_Flag_Damage_Reduced_4" .duration 3 .on_hit true .on_miss false
-effect: .name "GV_Flag_Suffer_Buffs_5" .target "performer" .chance 100% .buff_ids "GV_Flag_DB_Resist_5" "GV_Flag_Damage_Reduced_5" .duration 3 .on_hit true .on_miss false
+effect: .name "GV_Flag_Suffer_Buffs_1" .target "performer" .chance 100% .buff_ids "GV_Flag_Damage_Reduced_1" "GV_Flag_DB_Resist_1" .duration 3 .on_hit true .on_miss false
+effect: .name "GV_Flag_Suffer_Buffs_2" .target "performer" .chance 100% .buff_ids "GV_Flag_Damage_Reduced_2" "GV_Flag_DB_Resist_2" .duration 3 .on_hit true .on_miss false
+effect: .name "GV_Flag_Suffer_Buffs_3" .target "performer" .chance 100% .buff_ids "GV_Flag_Damage_Reduced_3" "GV_Flag_DB_Resist_3" .duration 3 .on_hit true .on_miss false
+effect: .name "GV_Flag_Suffer_Buffs_4" .target "performer" .chance 100% .buff_ids "GV_Flag_Damage_Reduced_4" "GV_Flag_DB_Resist_4" .duration 3 .on_hit true .on_miss false
+effect: .name "GV_Flag_Suffer_Buffs_5" .target "performer" .chance 100% .buff_ids "GV_Flag_Damage_Reduced_5" "GV_Flag_DB_Resist_5" .duration 3 .on_hit true .on_miss false
+
+effect: .name "GV_Flag_Steal_Bleed" .target "target" .curio_result_type "positive" .chance 100% .steal_buff_stat_type hp_dot_bleed .on_hit true .on_miss false .queue true .has_description_false
+effect: .name "GV_Flag_Steal_Blight" .target "target" .curio_result_type "positive" .chance 100% .steal_buff_stat_type hp_dot_poison .on_hit true .on_miss false .queue true .has_description_false
 
 // *Bleed Self*
 effect: .name "GV_Flag_Bleed_Self_1" .target "performer" .chance 100% .dotBleed 1 .duration 3 .on_hit true .on_miss true .can_apply_on_death true .apply_once true
@@ -55,6 +60,22 @@ effect: .name "GV_Flag_Bleed_Self_3" .target "performer" .chance 120% .dotBleed 
 effect: .name "GV_Flag_Bleed_Self_4" .target "performer" .chance 130% .dotBleed 1 .duration 3 .on_hit true .on_miss true .can_apply_on_death true .apply_once true
 effect: .name "GV_Flag_Bleed_Self_5" .target "performer" .chance 140% .dotBleed 1 .duration 3 .on_hit true .on_miss true .can_apply_on_death true .apply_once true
 
+// *Reactions*
+effect: .name "GV_Flag_Low_HP_Reaction" .target "performer" .chance 100% .buff_ids "GV_Flag_Low_Bleed" "GV_Flag_Low_Crit" "GV_Flag_Low_Spd" .buff_duration_type quest_end .on_hit true .on_miss false
+effect: .name "GV_Flag_Hurt_Stress_Heal" .target "performer" .chance 100% .healstress 4 .on_hit true .on_miss false .queue true
+
 // Tooltip Hacks
 //-------------------------
-effect: .name "GV_Tooltip_Flag_Transfer_Mark" .target "performer" .skill_instant true .chance 100% .buff_ids "GV_Tooltip_Flag_Transfer_Mark" .on_hit true .on_miss false .apply_once true
+effect: .name "GV_Tooltip_Flag_Transfer_Dots" .target "performer" .skill_instant true .chance 100% .buff_ids "GV_Tooltip_Flag_Transfer_Dots" .on_hit true .on_miss false .apply_once true
+
+effect: .name "GV_Tooltip_Flag_Buff_Exsang" .target "performer" .chance 100% .skill_instant true .buff_ids "GV_Tooltip_Flag_Buff_Exsang_Bleed" .on_hit true .on_miss false
+
+effect: .name "GV_Tooltip_Flag_Exsang_Bleed_1" .target "performer" .chance 100% .skill_instant true .buff_ids "GV_Tooltip_Flag_Exsang_Bleed_1" .on_hit true .on_miss false
+effect: .name "GV_Tooltip_Flag_Exsang_Bleed_2" .target "performer" .chance 100% .skill_instant true .buff_ids "GV_Tooltip_Flag_Exsang_Bleed_2" .on_hit true .on_miss false
+effect: .name "GV_Tooltip_Flag_Exsang_Bleed_3" .target "performer" .chance 100% .skill_instant true .buff_ids "GV_Tooltip_Flag_Exsang_Bleed_3" .on_hit true .on_miss false
+effect: .name "GV_Tooltip_Flag_Exsang_Bleed_4" .target "performer" .chance 100% .skill_instant true .buff_ids "GV_Tooltip_Flag_Exsang_Bleed_4" .on_hit true .on_miss false
+effect: .name "GV_Tooltip_Flag_Exsang_Bleed_5" .target "performer" .chance 100% .skill_instant true .buff_ids "GV_Tooltip_Flag_Exsang_Bleed_5" .on_hit true .on_miss false
+
+effect: .name "GV_Tooltip_Flag_Exsang_Self_Effects" .target "performer" .chance 100% .skill_instant true .buff_ids "GV_Tooltip_Flag_Exsang_Self_Effects" .on_hit true .on_miss false
+
+effect: .name "GV_Tooltip_Flag_Exsang_Mods" .target "performer" .chance 100% .skill_instant true .buff_ids "GV_Tooltip_Flag_Exsang_Mods" .on_hit true .on_miss false

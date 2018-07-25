@@ -14,7 +14,7 @@ armour: .name "flagellant_armour_4" .icon "eqp_armour_4.png"
 
 combat_skill: .id "punish" .icon "one" .anim "attack_punish" .fx "punish" .targchestfx "punish_target" .area_pos_offset 50 0 .target_area_pos_offset -50 0 .condensed_tooltip_stats true
 combat_skill: .id "rain_of_sorrows" .icon "two" .anim "attack_rain" .fx "rain_of_sorrows" .targchestfx "rain_of_sorrows_target" .area_pos_offset 75 0 .target_area_pos_offset -75 0	.condensed_tooltip_stats true
-combat_skill: .id "exsanguinate" .icon "three" .anim "attack_exsanguinate" .fx "exsanguinate" .targchestfx "exsanguinate_target" .area_pos_offset 50 0 .target_area_pos_offset -50 0 .condensed_tooltip_stats true .condensed_tooltip_effects true
+combat_skill: .id "exsanguinate" .icon "three" .anim "attack_exsanguinate" .fx "exsanguinate" .targchestfx "exsanguinate_target" .area_pos_offset 50 0 .target_area_pos_offset -50 0 .condensed_tooltip_stats true
 combat_skill: .id "reclaim" .icon "four" .anim "attack_reclaim" .fx "reclaim" .targfx "redeem_target" .condensed_tooltip_stats true
 combat_skill: .id "redeem" .icon "five" .anim "attack_redeem" .fx "redeem" .targfx "redeem_target" .condensed_tooltip_stats true
 combat_skill: .id "endure" .icon "endure" .anim "attack_suffer" .fx "endure" .condensed_tooltip_stats true
