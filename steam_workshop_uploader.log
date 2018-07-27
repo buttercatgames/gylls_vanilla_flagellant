@@ -27,15 +27,12 @@ heroes/flagellant/flagellant.ability.endure.png
 heroes/flagellant/flagellant.art.darkest
 heroes/flagellant/flagellant.info.darkest
 raid/camping/crimson_court.camping_skills.json
-scripts/layout/gv_heroes_flagellant.popup_text.layout.darkest
 shared/buffs/gv_heroes_flagellant.buffs.json
 effects/gv_heroes_flagellant.effects.darkest
-localization/1445670072_english.loc
 localization/gv_flagellant.string_table.xml
 preview_icon.png
-project-backup.xml
 project.xml
 
-Submitting.......................................................................Submitted.
+Submitting...............................................................Submitted.
 Saving project file C:\DarkestDungeon\mods\gylls_vanilla_flagellant\project.xml
 
