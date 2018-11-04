@@ -1,225 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 	<language id="english">
-		
-	</language>
-</root>
-
-<?xml version="1.0" encoding="UTF-8"?>
-<root>
-	<language id="english">
-	<entry id="buff_rule_data_tooltip_exsanguinate"><![CDATA[Exsanguinate]]></entry>
+		<entry id="buff_rule_data_tooltip_exsanguinate"><![CDATA[Exsanguinate]]></entry>
 		<entry id="buff_stat_tooltip_hp_dot_bleed_amount_percent"><![CDATA[+%d%% Bleed Amount]]></entry>
 		<entry id="buff_stat_tooltip_disable_combat_skill_attribute_debuff"><![CDATA[Exsanguinate Disabled!]]></entry>
 		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_transfer_dots"><![CDATA[Transfer {colour_start|bleed}Bleed{colour_end} / {colour_start|blight}Blight{colour_end}]]></entry>
 		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_buff_exsang_bleed"><![CDATA[{colour_start|buff}Buff Self:{colour_end}
-Exsanguinate: {colour_start|bleed}Bleed{colour_end} +2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_1"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(100%%){colour_end} 2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_2"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(110%%){colour_end} 2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_3"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(120%%){colour_end} 3 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_4"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(130%%){colour_end} 3 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_5"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(140%%){colour_end} 4 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_mods"><![CDATA[+100%% {colour_start|healhp}Healing{colour_end} Skills if HP below 40%%
-+200%% {colour_start|healhp}Healing{colour_end} Skills if HP below 20%%]]></entry>
+Exsanguinate: {colour_start|bleed}Bleed{colour_end} +2 pts/rd
+Exsanguinate: +20%% {colour_start|bleed}Bleed{colour_end} Skill Chance]]></entry>
+		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_1"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(100%%){colour_end} 2 pts/rd for 3 rds]]></entry>
+		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_2"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(110%%){colour_end} 2 pts/rd for 3 rds]]></entry>
+		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_3"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(120%%){colour_end} 3 pts/rd for 3 rds]]></entry>
+		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_4"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(130%%){colour_end} 3 pts/rd for 3 rds]]></entry>
+		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_5"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(140%%){colour_end} 4 pts/rd for 3 rds]]></entry>
+		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_mods"><![CDATA[Double {colour_start|healhp}Healing{colour_end} if HP below 40%%]]></entry>
+		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_endure_mods"><![CDATA[Double {colour_start|healhp}Healing{colour_end} if HP below 20%%]]></entry>
 		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_self_effects"><![CDATA[Self:
-{colour_start|healhp}Heal{colour_end} 10%% max HP / Exsanguinate Disabled!]]></entry>
-	</language>
-
-	<language id="french">
-	<entry id="buff_rule_data_tooltip_exsanguinate"><![CDATA[Exsanguinate]]></entry>
-		<entry id="buff_stat_tooltip_hp_dot_bleed_amount_percent"><![CDATA[+%d%% Bleed Amount]]></entry>
-		<entry id="buff_stat_tooltip_disable_combat_skill_attribute_debuff"><![CDATA[Exsanguinate Disabled!]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_transfer_dots"><![CDATA[Transfer {colour_start|bleed}Bleed{colour_end} / {colour_start|blight}Blight{colour_end}]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_buff_exsang_bleed"><![CDATA[{colour_start|buff}Buff Self:{colour_end}
-Exsanguinate: {colour_start|bleed}Bleed{colour_end} +2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_1"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(100%%){colour_end} 2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_2"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(110%%){colour_end} 2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_3"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(120%%){colour_end} 3 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_4"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(130%%){colour_end} 3 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_5"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(140%%){colour_end} 4 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_mods"><![CDATA[+100%% {colour_start|healhp}Healing{colour_end} Skills if HP below 40%%
-+200%% {colour_start|healhp}Healing{colour_end} Skills if HP below 20%%]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_self_effects"><![CDATA[Self:
-{colour_start|healhp}Heal{colour_end} 10%% max HP / Exsanguinate Disabled!]]></entry>
-	</language>
-
-	<language id="german">
-	<entry id="buff_rule_data_tooltip_exsanguinate"><![CDATA[Exsanguinate]]></entry>
-		<entry id="buff_stat_tooltip_hp_dot_bleed_amount_percent"><![CDATA[+%d%% Bleed Amount]]></entry>
-		<entry id="buff_stat_tooltip_disable_combat_skill_attribute_debuff"><![CDATA[Exsanguinate Disabled!]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_transfer_dots"><![CDATA[Transfer {colour_start|bleed}Bleed{colour_end} / {colour_start|blight}Blight{colour_end}]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_buff_exsang_bleed"><![CDATA[{colour_start|buff}Buff Self:{colour_end}
-Exsanguinate: {colour_start|bleed}Bleed{colour_end} +2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_1"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(100%%){colour_end} 2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_2"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(110%%){colour_end} 2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_3"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(120%%){colour_end} 3 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_4"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(130%%){colour_end} 3 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_5"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(140%%){colour_end} 4 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_mods"><![CDATA[+100%% {colour_start|healhp}Healing{colour_end} Skills if HP below 40%%
-+200%% {colour_start|healhp}Healing{colour_end} Skills if HP below 20%%]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_self_effects"><![CDATA[Self:
-{colour_start|healhp}Heal{colour_end} 10%% max HP / Exsanguinate Disabled!]]></entry>
-	</language>
-
-	<language id="spanish">
-	<entry id="buff_rule_data_tooltip_exsanguinate"><![CDATA[Exsanguinate]]></entry>
-		<entry id="buff_stat_tooltip_hp_dot_bleed_amount_percent"><![CDATA[+%d%% Bleed Amount]]></entry>
-		<entry id="buff_stat_tooltip_disable_combat_skill_attribute_debuff"><![CDATA[Exsanguinate Disabled!]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_transfer_dots"><![CDATA[Transfer {colour_start|bleed}Bleed{colour_end} / {colour_start|blight}Blight{colour_end}]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_buff_exsang_bleed"><![CDATA[{colour_start|buff}Buff Self:{colour_end}
-Exsanguinate: {colour_start|bleed}Bleed{colour_end} +2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_1"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(100%%){colour_end} 2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_2"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(110%%){colour_end} 2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_3"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(120%%){colour_end} 3 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_4"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(130%%){colour_end} 3 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_5"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(140%%){colour_end} 4 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_mods"><![CDATA[+100%% {colour_start|healhp}Healing{colour_end} Skills if HP below 40%%
-+200%% {colour_start|healhp}Healing{colour_end} Skills if HP below 20%%]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_self_effects"><![CDATA[Self:
-{colour_start|healhp}Heal{colour_end} 10%% max HP / Exsanguinate Disabled!]]></entry>
-	</language>
-
-	<language id="brazilian">
-	<entry id="buff_rule_data_tooltip_exsanguinate"><![CDATA[Exsanguinate]]></entry>
-		<entry id="buff_stat_tooltip_hp_dot_bleed_amount_percent"><![CDATA[+%d%% Bleed Amount]]></entry>
-		<entry id="buff_stat_tooltip_disable_combat_skill_attribute_debuff"><![CDATA[Exsanguinate Disabled!]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_transfer_dots"><![CDATA[Transfer {colour_start|bleed}Bleed{colour_end} / {colour_start|blight}Blight{colour_end}]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_buff_exsang_bleed"><![CDATA[{colour_start|buff}Buff Self:{colour_end}
-Exsanguinate: {colour_start|bleed}Bleed{colour_end} +2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_1"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(100%%){colour_end} 2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_2"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(110%%){colour_end} 2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_3"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(120%%){colour_end} 3 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_4"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(130%%){colour_end} 3 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_5"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(140%%){colour_end} 4 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_mods"><![CDATA[+100%% {colour_start|healhp}Healing{colour_end} Skills if HP below 40%%
-+200%% {colour_start|healhp}Healing{colour_end} Skills if HP below 20%%]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_self_effects"><![CDATA[Self:
-{colour_start|healhp}Heal{colour_end} 10%% max HP / Exsanguinate Disabled!]]></entry>
-	</language>
-
-	<language id="russian">
-	<entry id="buff_rule_data_tooltip_exsanguinate"><![CDATA[Exsanguinate]]></entry>
-		<entry id="buff_stat_tooltip_hp_dot_bleed_amount_percent"><![CDATA[+%d%% Bleed Amount]]></entry>
-		<entry id="buff_stat_tooltip_disable_combat_skill_attribute_debuff"><![CDATA[Exsanguinate Disabled!]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_transfer_dots"><![CDATA[Transfer {colour_start|bleed}Bleed{colour_end} / {colour_start|blight}Blight{colour_end}]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_buff_exsang_bleed"><![CDATA[{colour_start|buff}Buff Self:{colour_end}
-Exsanguinate: {colour_start|bleed}Bleed{colour_end} +2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_1"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(100%%){colour_end} 2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_2"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(110%%){colour_end} 2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_3"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(120%%){colour_end} 3 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_4"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(130%%){colour_end} 3 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_5"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(140%%){colour_end} 4 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_mods"><![CDATA[+100%% {colour_start|healhp}Healing{colour_end} Skills if HP below 40%%
-+200%% {colour_start|healhp}Healing{colour_end} Skills if HP below 20%%]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_self_effects"><![CDATA[Self:
-{colour_start|healhp}Heal{colour_end} 10%% max HP / Exsanguinate Disabled!]]></entry>
-	</language>
-
-	<language id="polish">
-	<entry id="buff_rule_data_tooltip_exsanguinate"><![CDATA[Exsanguinate]]></entry>
-		<entry id="buff_stat_tooltip_hp_dot_bleed_amount_percent"><![CDATA[+%d%% Bleed Amount]]></entry>
-		<entry id="buff_stat_tooltip_disable_combat_skill_attribute_debuff"><![CDATA[Exsanguinate Disabled!]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_transfer_dots"><![CDATA[Transfer {colour_start|bleed}Bleed{colour_end} / {colour_start|blight}Blight{colour_end}]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_buff_exsang_bleed"><![CDATA[{colour_start|buff}Buff Self:{colour_end}
-Exsanguinate: {colour_start|bleed}Bleed{colour_end} +2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_1"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(100%%){colour_end} 2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_2"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(110%%){colour_end} 2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_3"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(120%%){colour_end} 3 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_4"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(130%%){colour_end} 3 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_5"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(140%%){colour_end} 4 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_mods"><![CDATA[+100%% {colour_start|healhp}Healing{colour_end} Skills if HP below 40%%
-+200%% {colour_start|healhp}Healing{colour_end} Skills if HP below 20%%]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_self_effects"><![CDATA[Self:
-{colour_start|healhp}Heal{colour_end} 10%% max HP / Exsanguinate Disabled!]]></entry>
-	</language>
-
-	<language id="czech">
-	<entry id="buff_rule_data_tooltip_exsanguinate"><![CDATA[Exsanguinate]]></entry>
-		<entry id="buff_stat_tooltip_hp_dot_bleed_amount_percent"><![CDATA[+%d%% Bleed Amount]]></entry>
-		<entry id="buff_stat_tooltip_disable_combat_skill_attribute_debuff"><![CDATA[Exsanguinate Disabled!]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_transfer_dots"><![CDATA[Transfer {colour_start|bleed}Bleed{colour_end} / {colour_start|blight}Blight{colour_end}]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_buff_exsang_bleed"><![CDATA[{colour_start|buff}Buff Self:{colour_end}
-Exsanguinate: {colour_start|bleed}Bleed{colour_end} +2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_1"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(100%%){colour_end} 2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_2"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(110%%){colour_end} 2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_3"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(120%%){colour_end} 3 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_4"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(130%%){colour_end} 3 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_5"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(140%%){colour_end} 4 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_mods"><![CDATA[+100%% {colour_start|healhp}Healing{colour_end} Skills if HP below 40%%
-+200%% {colour_start|healhp}Healing{colour_end} Skills if HP below 20%%]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_self_effects"><![CDATA[Self:
-{colour_start|healhp}Heal{colour_end} 10%% max HP / Exsanguinate Disabled!]]></entry>
-	</language>
-
-	<language id="italian">
-	<entry id="buff_rule_data_tooltip_exsanguinate"><![CDATA[Exsanguinate]]></entry>
-		<entry id="buff_stat_tooltip_hp_dot_bleed_amount_percent"><![CDATA[+%d%% Bleed Amount]]></entry>
-		<entry id="buff_stat_tooltip_disable_combat_skill_attribute_debuff"><![CDATA[Exsanguinate Disabled!]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_transfer_dots"><![CDATA[Transfer {colour_start|bleed}Bleed{colour_end} / {colour_start|blight}Blight{colour_end}]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_buff_exsang_bleed"><![CDATA[{colour_start|buff}Buff Self:{colour_end}
-Exsanguinate: {colour_start|bleed}Bleed{colour_end} +2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_1"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(100%%){colour_end} 2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_2"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(110%%){colour_end} 2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_3"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(120%%){colour_end} 3 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_4"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(130%%){colour_end} 3 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_5"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(140%%){colour_end} 4 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_mods"><![CDATA[+100%% {colour_start|healhp}Healing{colour_end} Skills if HP below 40%%
-+200%% {colour_start|healhp}Healing{colour_end} Skills if HP below 20%%]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_self_effects"><![CDATA[Self:
-{colour_start|healhp}Heal{colour_end} 10%% max HP / Exsanguinate Disabled!]]></entry>
-	</language>
-
-	<language id="schinese">
-	<entry id="buff_rule_data_tooltip_exsanguinate"><![CDATA[Exsanguinate]]></entry>
-		<entry id="buff_stat_tooltip_hp_dot_bleed_amount_percent"><![CDATA[+%d%% Bleed Amount]]></entry>
-		<entry id="buff_stat_tooltip_disable_combat_skill_attribute_debuff"><![CDATA[Exsanguinate Disabled!]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_transfer_dots"><![CDATA[Transfer {colour_start|bleed}Bleed{colour_end} / {colour_start|blight}Blight{colour_end}]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_buff_exsang_bleed"><![CDATA[{colour_start|buff}Buff Self:{colour_end}
-Exsanguinate: {colour_start|bleed}Bleed{colour_end} +2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_1"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(100%%){colour_end} 2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_2"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(110%%){colour_end} 2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_3"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(120%%){colour_end} 3 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_4"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(130%%){colour_end} 3 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_5"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(140%%){colour_end} 4 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_mods"><![CDATA[+100%% {colour_start|healhp}Healing{colour_end} Skills if HP below 40%%
-+200%% {colour_start|healhp}Healing{colour_end} Skills if HP below 20%%]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_self_effects"><![CDATA[Self:
-{colour_start|healhp}Heal{colour_end} 10%% max HP / Exsanguinate Disabled!]]></entry>
-	</language>
-
-	<language id="koreana">
-	<entry id="buff_rule_data_tooltip_exsanguinate"><![CDATA[Exsanguinate]]></entry>
-		<entry id="buff_stat_tooltip_hp_dot_bleed_amount_percent"><![CDATA[+%d%% Bleed Amount]]></entry>
-		<entry id="buff_stat_tooltip_disable_combat_skill_attribute_debuff"><![CDATA[Exsanguinate Disabled!]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_transfer_dots"><![CDATA[Transfer {colour_start|bleed}Bleed{colour_end} / {colour_start|blight}Blight{colour_end}]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_buff_exsang_bleed"><![CDATA[{colour_start|buff}Buff Self:{colour_end}
-Exsanguinate: {colour_start|bleed}Bleed{colour_end} +2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_1"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(100%%){colour_end} 2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_2"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(110%%){colour_end} 2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_3"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(120%%){colour_end} 3 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_4"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(130%%){colour_end} 3 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_5"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(140%%){colour_end} 4 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_mods"><![CDATA[+100%% {colour_start|healhp}Healing{colour_end} Skills if HP below 40%%
-+200%% {colour_start|healhp}Healing{colour_end} Skills if HP below 20%%]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_self_effects"><![CDATA[Self:
-{colour_start|healhp}Heal{colour_end} 10%% max HP / Exsanguinate Disabled!]]></entry>
-	</language>
-
-	<language id="koreanb">
-	<entry id="buff_rule_data_tooltip_exsanguinate"><![CDATA[Exsanguinate]]></entry>
-		<entry id="buff_stat_tooltip_hp_dot_bleed_amount_percent"><![CDATA[+%d%% Bleed Amount]]></entry>
-		<entry id="buff_stat_tooltip_disable_combat_skill_attribute_debuff"><![CDATA[Exsanguinate Disabled!]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_transfer_dots"><![CDATA[Transfer {colour_start|bleed}Bleed{colour_end} / {colour_start|blight}Blight{colour_end}]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_buff_exsang_bleed"><![CDATA[{colour_start|buff}Buff Self:{colour_end}
-Exsanguinate: {colour_start|bleed}Bleed{colour_end} +2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_1"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(100%%){colour_end} 2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_2"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(110%%){colour_end} 2 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_3"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(120%%){colour_end} 3 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_4"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(130%%){colour_end} 3 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_bleed_5"><![CDATA[{colour_start|bleed}Bleed{colour_end} {colour_start|skill_unselectable}(140%%){colour_end} 4 pts/rd]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_mods"><![CDATA[+100%% {colour_start|healhp}Healing{colour_end} Skills if HP below 40%%
-+200%% {colour_start|healhp}Healing{colour_end} Skills if HP below 20%%]]></entry>
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_exsang_self_effects"><![CDATA[Self:
-{colour_start|healhp}Heal{colour_end} 10%% max HP / Exsanguinate Disabled!]]></entry>
+{colour_start|healhp}Heal{colour_end} 20%% max HP / Exsanguinate Disabled!]]></entry>
+		<entry id="buff_stat_tooltip_upgrade_discount_disable_exsang"><![CDATA[Exsanguinate Disabled!]]></entry>
+		<entry id="str_skill_mode_info_strife"><![CDATA[]]></entry>
+		<entry id="str_skill_mode_info_calm"><![CDATA[]]></entry>
 	</language>
 </root>

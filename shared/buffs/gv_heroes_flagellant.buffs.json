@@ -262,6 +262,19 @@
          }
       },
       {
+         "id" : "GV_Flag_Buff_Exsang_Bleed_Chance",
+         "stat_type" : "bleed_chance",
+         "stat_sub_type" : "",
+         "amount" : 0.2,
+         "remove_if_not_active" : false,
+         "rule_type" : "skill",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : "exsanguinate"
+         }
+      },
+      {
          "id" : "GV_Flag_Buff_Exsang_Extra_Heal",
          "stat_type" : "hp_heal_amount",
          "stat_sub_type" : "",
@@ -421,7 +434,7 @@
          "id" : "GV_Flag_Exsang_Low_Healer",
          "stat_type" : "hp_heal_percent",
          "stat_sub_type" : "",
-         "amount" : -0.25,
+         "amount" : -0.50,
          "remove_if_not_active" : false,
          "rule_type" : "hpabove",
          "is_false_rule" : false,
@@ -455,7 +468,35 @@
             "float" : 0,
             "string" : ""
          },
+		 "is_clear_debuff_valid": false,
+		 "has_description": false
+      },
+	  {
+         "id" : "GV_Flag_Disable_Exsang_Tooltip",
+         "stat_type" : "upgrade_discount",
+         "stat_sub_type" : "disable_exsang",
+         "amount" : -0,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         },
 		 "is_clear_debuff_valid": false
+      },
+	  {
+         "id" : "GV_Flag_Calm",
+         "stat_type" : "stress_dmg_received_percent",
+         "stat_sub_type" : "mode",
+         "amount" : -1.0,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
       },
 	  {
          "id" : "GV_Tooltip_Flag_Transfer_Dots",
@@ -565,6 +606,19 @@
          "id" : "GV_Tooltip_Flag_Exsang_Mods",
          "stat_type" : "upgrade_discount",
          "stat_sub_type" : "gv_flag_exsang_mods",
+         "amount" : 1,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+	  {
+         "id" : "GV_Tooltip_Flag_Endure_Mods",
+         "stat_type" : "upgrade_discount",
+         "stat_sub_type" : "gv_flag_endure_mods",
          "amount" : 1,
          "remove_if_not_active" : false,
          "rule_type" : "always",

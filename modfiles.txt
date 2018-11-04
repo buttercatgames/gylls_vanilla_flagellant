@@ -1,9 +1,0 @@
-heroes/flagellant/flagellant.ability.endure.png 11967
-heroes/flagellant/flagellant.art.darkest 1995
-heroes/flagellant/flagellant.info.darkest 10503
-raid/camping/crimson_court.camping_skills.json 3524
-shared/buffs/gv_heroes_flagellant.buffs.json 16702
-effects/gv_heroes_flagellant.effects.darkest 7896
-localization/gv_flagellant.string_table.xml 25366
-preview_icon.png 256069
-project.xml 2190

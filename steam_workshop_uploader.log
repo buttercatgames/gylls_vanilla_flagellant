@@ -24,15 +24,30 @@ No unchanged files detected, directly uploading data directory.
 Modded files...
 
 heroes/flagellant/flagellant.ability.endure.png
+heroes/flagellant/flagellant.ability.punish.png
+heroes/flagellant/flagellant.ability.rain.png
 heroes/flagellant/flagellant.art.darkest
 heroes/flagellant/flagellant.info.darkest
 raid/camping/crimson_court.camping_skills.json
 shared/buffs/gv_heroes_flagellant.buffs.json
 effects/gv_heroes_flagellant.effects.darkest
+localization/1408032394_brazilian.loc
+localization/1408032394_czech.loc
+localization/1408032394_english.loc
+localization/1408032394_french.loc
+localization/1408032394_german.loc
+localization/1408032394_italian.loc
+localization/1408032394_koreana.loc
+localization/1408032394_koreanb.loc
+localization/1408032394_polish.loc
+localization/1408032394_russian.loc
+localization/1408032394_schinese.loc
+localization/1408032394_spanish.loc
 localization/gv_flagellant.string_table.xml
+modfiles.txt
 preview_icon.png
 project.xml
 
-Submitting...............................................................Submitted.
+Submitting....................................................................................Submitted.
 Saving project file C:\DarkestDungeon\mods\gylls_vanilla_flagellant\project.xml
 
