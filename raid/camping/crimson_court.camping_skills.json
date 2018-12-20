@@ -42,25 +42,25 @@
 		{ 
 			"id" : "lash_solace",
 			"level" : 0,
-			"cost" : 2,
+			"cost" : 3,
 			"use_limit" : 1,
 			"effects" :
 			[
 				{ 
 					"selection" : "self",
 					"requirements" : [],
-					"chance" : { "code" : "a", "amount": 1.0 },
-                    "type": "health_damage_max_health_percent",
+					"chance" : { "code" : "b", "amount": 1.0 },
+                    "type": "stress_heal_amount",
                     "sub_type" : "",
-					"amount" :  0.10
+					"amount" : 40
 				},
 				{ 
 					"selection" : "self",
 					"requirements" : [],
-					"chance" : { "code" : "b", "amount": 1.0 },
-                    "type": "stress_heal_amount",
+					"chance" : { "code" : "a", "amount": 1.0 },
+                    "type": "health_damage_max_health_percent",
                     "sub_type" : "",
-					"amount" :  25
+					"amount" : 0.20
 				}
 			],
 			"hero_classes" : ["flagellant"],

@@ -1,12 +1,12 @@
-resistances: .stun 50% .poison 30% .bleed 10% .disease 40% .move 50% .debuff 30% .death_blow 67% .trap 0%
+resistances: .stun 20% .poison 10% .bleed 10% .disease 10% .move 20% .debuff 30% .death_blow 73% .trap 0%
 
 crit: .effects "on_crit_bleedchance"
 
-weapon: .name "flagellant_weapon_0" .atk 0% .dmg 3 5 .crit 2% .spd 5
-weapon: .name "flagellant_weapon_1" .atk 0% .dmg 4 6 .crit 3% .spd 5 .upgradeRequirementCode 0
-weapon: .name "flagellant_weapon_2" .atk 0% .dmg 4 7 .crit 4% .spd 6 .upgradeRequirementCode 1
-weapon: .name "flagellant_weapon_3" .atk 0% .dmg 5 9 .crit 5% .spd 6 .upgradeRequirementCode 2
-weapon: .name "flagellant_weapon_4" .atk 0% .dmg 5 10 .crit 6% .spd 7 .upgradeRequirementCode 3
+weapon: .name "flagellant_weapon_0" .atk 0% .dmg 3 6 .crit 2% .spd 5
+weapon: .name "flagellant_weapon_1" .atk 0% .dmg 4 7 .crit 3% .spd 5 .upgradeRequirementCode 0
+weapon: .name "flagellant_weapon_2" .atk 0% .dmg 4 8 .crit 4% .spd 6 .upgradeRequirementCode 1
+weapon: .name "flagellant_weapon_3" .atk 0% .dmg 5 10 .crit 5% .spd 6 .upgradeRequirementCode 2
+weapon: .name "flagellant_weapon_4" .atk 0% .dmg 5 11 .crit 6% .spd 7 .upgradeRequirementCode 3
 
 armour: .name "flagellant_armour_0" .def 0% .prot 0 .hp 22 .spd 0
 armour: .name "flagellant_armour_1" .def 5% .prot 0 .hp 26 .spd 0 .upgradeRequirementCode 0
@@ -15,26 +15,25 @@ armour: .name "flagellant_armour_3" .def 15% .prot 0 .hp 34 .spd 0 .upgradeRequi
 armour: .name "flagellant_armour_4" .def 20% .prot 0 .hp 38 .spd 0 .upgradeRequirementCode 3
 
 // Punish
-combat_skill: .id "punish" .level 0 .type "melee" .atk 90% .dmg 0% .crit 2% .launch 12 .target 12 .is_crit_valid True .effect "Strong Bleed 1" "GV_Flag_Buff_Exsang" "GV_Tooltip_Flag_Buff_Exsang" "GV_Flag_Strife" .generation_guaranteed true
+combat_skill: .id "punish" .level 0 .type "melee" .atk 90% .dmg 0% .crit 2% .launch 21 .target 12 .is_crit_valid True .effect "GV_Flag_Punish_Bleed_1" "GV_Flag_Buff_Exsang" "GV_Tooltip_Flag_Buff_Exsang" .generation_guaranteed true
 
 // Exsanguinate
-combat_skill: .id "exsanguinate" .level 0 .type "melee" .atk 95% .dmg -50% .crit 0% .launch 12 .target 12 .is_crit_valid True .effect "GV_Flag_Instant_Buffs_1" "GV_Flag_Exsang_Heal_Self" "GV_Flag_Super_Bleed_1" "GV_Flag_Disable_Exsang" "GV_Tooltip_Flag_Exsang_Bleed_1" "GV_Tooltip_Flag_Exsang_Mods" "GV_Tooltip_Flag_Exsang_Self_Effects" "GV_Flag_Strife"
-
-// Reclaim
-combat_skill: .id "reclaim" .level 0 .launch 1234 .target @1234 .self_target_valid false .is_crit_valid False .effect "GV_Flag_Hot_1" "GV_Flag_Bleed_Self_1" "GV_Flag_Strife" .is_stall_invalidating false
-
-// Suffer
-combat_skill: .id "suffer" .level 0 .self_target_valid false .launch 1234 .target @1234 .is_crit_valid True .effect "Clear Marked Target" "Mark Self" "GV_Tooltip_Flag_Transfer_Dots" "GV_Flag_Steal_Bleed" "GV_Flag_Steal_Blight" "GV_Flag_Suffer_Buffs_1" "GV_Flag_Strife" .is_stall_invalidating false
+combat_skill: .id "exsanguinate" .level 0 .type "melee" .atk 95% .dmg -50% .crit 0% .launch 21 .target 12 .is_crit_valid True .effect "GV_Tooltip_Flag_Exsang_Bleed_1" "GV_Flag_Instant_Buffs_1" "GV_Flag_Exsang_Heal_Self" "GV_Flag_Super_Bleed_1" "GV_Flag_Disable_Exsang" "GV_Tooltip_Flag_Exsang_Self_Effects"
 
 // Rain of Sorrows
-combat_skill: .id "rain_of_sorrows" .level 0 .type "melee" .atk 90% .dmg -67% .crit 0% .launch ~43 .target ~12 .is_crit_valid True .effect "Strong Bleed 1" "GV_Flag_Strife"
+combat_skill: .id "rain_of_sorrows" .level 0 .type "melee" .atk 90% .dmg -67% .crit 0% .launch 432 .target 234 .is_crit_valid True .effect "GV_Flag_Rain_Instant_Buffs_1" "GV_Tooltip_Flag_Rain" "GV_Flag_Rain_Bleed_1" "GV_Flag_Buff_Exsang" "GV_Tooltip_Flag_Buff_Exsang"
 
+// Reclaim
+combat_skill: .id "reclaim" .level 0 .launch 4321 .target @1234 .self_target_valid false .is_crit_valid False .effect "GV_Flag_Hot_1" "GV_Flag_Bleed_Self_1" .is_stall_invalidating false
 
 // Redeem
-combat_skill: .id "redeem" .level 0 .heal 1 1 .launch 1234 .target @1234 .is_crit_valid True .effect "GV_Flag_Healing_Buff" "GV_Flag_Bleed_Self_1" "GV_Flag_Strife" .is_stall_invalidating false
+combat_skill: .id "redeem" .level 0 .launch 4321 .target @1234 .is_crit_valid True .effect "GV_Flag_Redeem_Low_Healer" "GV_Flag_Redeem_Heal_Self_1" .is_stall_invalidating false
 
 // Endure
-combat_skill: .id "endure" .level 0 .launch 1234 .target .is_crit_valid True .required_performer_hp_range 0 0.4 .effect "GV_Flag_Endure_Buffs" "GV_Flag_Heal_Self" "GV_Flag_Strife" .is_stall_invalidating false
+combat_skill: .id "endure" .level 0 .launch 432 .target @1234 .self_target_valid false .is_crit_valid True .effect "GV_Flag_Stress_Heal_1" "GV_Flag_Self_Stress_1" .is_stall_invalidating false
+
+// Suffer
+combat_skill: .id "suffer" .level 0 .launch 4321 .target .is_crit_valid True .effect "GV_Flag_Self_Stress_Heal_1" "GV_Flag_Self_Damage_1" "GV_Flag_Suffer_Buffs" .is_stall_invalidating false
 
 combat_move_skill: .id "move" .level 0 .type "move" .move 1 2 .launch 4321
 
@@ -43,117 +42,16 @@ tag: .id "light"
 tag: .id "flagellant"
 tag: .id "altar_of_light"
 
-deaths_door: .buffs GV_Flag_Mega_Low_Bleed GV_Flag_Mega_Low_Crit GV_Flag_Mega_Low_Spd .recovery_buffs .recovery_heart_attack_buffs heartattackACCDebuff heartattackDMGLowDebuff heartattackDMGHighDebuff heartattackSPDDebuff heartattackSRDebuff .enter_effects flagellant_death_door_enter .enter_effect_round_cooldown 1
+deaths_door: .recovery_buffs .recovery_heart_attack_buffs heartattackACCDebuff heartattackDMGLowDebuff heartattackDMGHighDebuff heartattackSPDDebuff heartattackSRDebuff
+
 controlled: .target_rank 1
 id_index: .index 16
 skill_selection: .can_select_combat_skills true .number_of_selected_combat_skills_max 4
 overstressed_modifier: .override_trait_type_ids berserk .override_trait_type_chances 1.0
 activity_modifier: .override_valid_activity_ids flagellation treatment disease_treatment .override_stress_removal_amount_low 100 .override_stress_removal_amount_high 100
 
+hp_reaction: .hp_ratio 0.40 .is_under true .effects "GV_Flag_Low_HP_Reaction"
+hp_reaction: .hp_ratio 0.20 .is_under true .effects "GV_Flag_Mega_Low_HP_Reaction"
+
 quirk_modifier: .incompatible_class_ids alcoholism gambler love_interest enlightened god_fearing resolution known_cheat deviant_tastes flagellant unquiet_mind witness faithless bad_gambler skilled_gambler improved_balance meditator calm nymphomania
 generation: .is_generation_enabled true .town_event_dependency "first_flagellant" .number_of_positive_quirks_min 1 .number_of_positive_quirks_max 2 .number_of_negative_quirks_min 1 .number_of_negative_quirks_max 2 .number_of_class_specific_camping_skills 2 .number_of_shared_camping_skills 1 .number_of_random_combat_skills 4 .number_of_cards_in_deck 5 .card_chance 1.0
-
-// Modes
-// mode: .id strife .is_raid_default true .stress_damage_per_turn 3
-// mode: .id calm 
-
-// HP Reactions
-hp_reaction: .hp_ratio 0.99 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.98 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.97 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.96 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.95 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.94 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.93 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.92 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.91 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.90 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.89 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.88 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.87 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.86 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.85 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.84 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.83 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.82 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.81 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.80 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.79 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.78 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.77 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.76 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.75 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.74 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.73 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.72 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.71 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.70 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.69 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.68 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.67 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.66 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.65 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.64 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.63 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.62 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.61 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.60 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.59 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.58 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.57 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.56 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.55 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.54 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.53 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.52 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.51 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.50 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.49 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.48 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.47 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.46 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.45 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.44 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.43 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.42 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.41 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.40 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.39 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.38 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.37 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.36 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.35 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.34 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.33 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.32 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.31 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.30 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.29 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.28 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.27 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.26 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.25 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.24 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.23 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.22 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.21 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.20 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.19 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.18 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.17 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.16 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.15 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.14 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.13 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.12 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.11 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.10 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.09 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.08 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.07 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.06 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.05 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.04 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.03 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.02 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
-hp_reaction: .hp_ratio 0.01 .is_under true .effects GV_Flag_Hurt_Stress_Heal GV_Flag_Calm
