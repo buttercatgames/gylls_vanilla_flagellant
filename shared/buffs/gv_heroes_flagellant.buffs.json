@@ -2,162 +2,6 @@
    "buffs":
    [
       {
-         "id" : "GV_Flag_Low_Spd",
-         "stat_type" : "combat_stat_add",
-         "stat_sub_type" : "speed_rating",
-         "amount" : 1,
-         "remove_if_not_active" : true,
-         "rule_type" : "hpbelow",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0.4,
-            "string" : ""
-         }
-      },
-      {
-         "id" : "GV_Flag_Low_Crit",
-         "stat_type" : "combat_stat_add",
-         "stat_sub_type" : "crit_chance",
-         "amount" : 0.02,
-         "remove_if_not_active" : true,
-         "rule_type" : "hpbelow",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0.4,
-            "string" : ""
-         }
-      },
-      {
-         "id" : "GV_Flag_Low_Bleed",
-         "stat_type" : "bleed_chance",
-         "stat_sub_type" : "",
-         "amount" : 0.2,
-         "remove_if_not_active" : true,
-         "rule_type" : "hpbelow",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0.4,
-            "string" : ""
-         }
-      },
-      {
-         "id" : "GV_Flag_Mega_Low_Spd",
-         "stat_type" : "combat_stat_add",
-         "stat_sub_type" : "speed_rating",
-         "amount" : 1,
-         "remove_if_not_active" : true,
-         "rule_type" : "always",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : ""
-         }
-      },
-      {
-         "id" : "GV_Flag_Mega_Low_Crit",
-         "stat_type" : "combat_stat_add",
-         "stat_sub_type" : "crit_chance",
-         "amount" : 0.02,
-         "remove_if_not_active" : true,
-         "rule_type" : "always",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : ""
-         }
-      },
-      {
-         "id" : "GV_Flag_Mega_Low_Bleed",
-         "stat_type" : "bleed_chance",
-         "stat_sub_type" : "",
-         "amount" : 0.2,
-         "remove_if_not_active" : true,
-         "rule_type" : "always",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : ""
-         }
-      },
-	  {
-         "id" : "GV_Flag_Bleed_Bleeder_1",
-         "stat_type" : "bleed_chance",
-         "stat_sub_type" : "",
-         "amount" : 1.0,
-         "remove_if_not_active" : false,
-         "rule_type" : "actorStatus",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : "bleeding"
-         }
-      },
-      {
-         "id" : "GV_Flag_Bleed_Bleeder_2",
-         "stat_type" : "bleed_chance",
-         "stat_sub_type" : "",
-         "amount" : 1.1,
-         "remove_if_not_active" : false,
-         "rule_type" : "actorStatus",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : "bleeding"
-         }
-      },
-      {
-         "id" : "GV_Flag_Bleed_Bleeder_3",
-         "stat_type" : "bleed_chance",
-         "stat_sub_type" : "",
-         "amount" : 1.2,
-         "remove_if_not_active" : false,
-         "rule_type" : "actorStatus",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : "bleeding"
-         }
-      },
-      {
-         "id" : "GV_Flag_Bleed_Bleeder_4",
-         "stat_type" : "bleed_chance",
-         "stat_sub_type" : "",
-         "amount" : 1.3,
-         "remove_if_not_active" : false,
-         "rule_type" : "actorStatus",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : "bleeding"
-         }
-      },
-      {
-         "id" : "GV_Flag_Bleed_Bleeder_5",
-         "stat_type" : "bleed_chance",
-         "stat_sub_type" : "",
-         "amount" : 1.4,
-         "remove_if_not_active" : false,
-         "rule_type" : "actorStatus",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : "bleeding"
-         }
-      },
-      {
-         "id" : "GV_Flag_Bleed_Healer",
-         "stat_type" : "hp_heal_percent",
-         "stat_sub_type" : "",
-         "amount" : 1.0,
-         "remove_if_not_active" : false,
-         "rule_type" : "actorStatus",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : "bleeding"
-         }
-      },
-      {
          "id" : "GV_Flag_Healing_Buff",
          "stat_type" : "hp_heal_received_percent",
          "stat_sub_type" : "",
@@ -197,77 +41,10 @@
          }
       },
       {
-         "id" : "GV_Flag_Super_Stress_Heal",
-         "stat_type" : "stress_heal_percent",
-         "stat_sub_type" : "",
-         "amount" : 1.0,
-         "remove_if_not_active" : false,
-         "rule_type" : "hpbelow",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0.2,
-            "string" : ""
-         }
-      },
-      {
-         "id" : "GV_Flag_Super_Heal",
-         "stat_type" : "hp_heal_percent",
-         "stat_sub_type" : "",
-         "amount" : 1.0,
-         "remove_if_not_active" : false,
-         "rule_type" : "hpbelow",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0.2,
-            "string" : ""
-         }
-      },
-      {
-         "id" : "GV_Flag_Stress_Resist",
+         "id" : "GV_Flag_Stress_Resist_1",
          "stat_type" : "stress_dmg_received_percent",
          "stat_sub_type" : "",
          "amount" : -0.25,
-		 "duration" : 2,
-         "remove_if_not_active" : false,
-         "rule_type" : "always",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : ""
-         }
-      },
-	  {
-         "id" : "GV_Flag_Bleed_Duration",
-         "stat_type" : "hp_dot_bleed_duration_percent",
-         "stat_sub_type" : "",
-         "amount" : 0.50,
-         "duration" : 3,
-         "remove_if_not_active" : true,
-         "rule_type" : "always",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : ""
-         }
-      },
-      {
-         "id" : "GV_Flag_Double_Stress_Heal_Received",
-         "stat_type" : "stress_heal_received_percent",
-         "stat_sub_type" : "",
-         "amount" : 1.0,
-         "remove_if_not_active" : false,
-         "rule_type" : "hpbelow",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0.2,
-            "string" : ""
-         }
-      },
-      {
-         "id" : "GV_Flag_Rain_Extra_Bleed_1",
-         "stat_type" : "hp_dot_bleed_amount_percent",
-         "stat_sub_type" : "",
-         "amount" : 1.0,
          "remove_if_not_active" : false,
          "rule_type" : "always",
          "is_false_rule" : false,
@@ -277,10 +54,10 @@
          }
       },
       {
-         "id" : "GV_Flag_Rain_Extra_Bleed_2",
-         "stat_type" : "hp_dot_bleed_amount_percent",
+         "id" : "GV_Flag_Stress_Resist_2",
+         "stat_type" : "stress_dmg_received_percent",
          "stat_sub_type" : "",
-         "amount" : 2.0,
+         "amount" : -0.27,
          "remove_if_not_active" : false,
          "rule_type" : "always",
          "is_false_rule" : false,
@@ -290,7 +67,46 @@
          }
       },
       {
-         "id" : "GV_Flag_Rain_Stress_Bleed_1",
+         "id" : "GV_Flag_Stress_Resist_3",
+         "stat_type" : "stress_dmg_received_percent",
+         "stat_sub_type" : "",
+         "amount" : -0.29,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_Flag_Stress_Resist_4",
+         "stat_type" : "stress_dmg_received_percent",
+         "stat_sub_type" : "",
+         "amount" : -0.31,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_Flag_Stress_Resist_5",
+         "stat_type" : "stress_dmg_received_percent",
+         "stat_sub_type" : "",
+         "amount" : -0.33,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_Flag_Rain_Stress_Bleed_100_20",
          "stat_type" : "hp_dot_bleed_amount_percent",
          "stat_sub_type" : "",
          "amount" : 1.0,
@@ -303,7 +119,7 @@
          }
       },
       {
-         "id" : "GV_Flag_Rain_Stress_Bleed_2",
+         "id" : "GV_Flag_Rain_Stress_Bleed_100_40",
          "stat_type" : "hp_dot_bleed_amount_percent",
          "stat_sub_type" : "",
          "amount" : 1.0,
@@ -316,7 +132,7 @@
          }
       },
       {
-         "id" : "GV_Flag_Rain_Stress_Bleed_3",
+         "id" : "GV_Flag_Rain_Stress_Bleed_100_60",
          "stat_type" : "hp_dot_bleed_amount_percent",
          "stat_sub_type" : "",
          "amount" : 1.0,
@@ -329,7 +145,7 @@
          }
       },
       {
-         "id" : "GV_Flag_Rain_Stress_Bleed_4",
+         "id" : "GV_Flag_Rain_Stress_Bleed_100_80",
          "stat_type" : "hp_dot_bleed_amount_percent",
          "stat_sub_type" : "",
          "amount" : 1.0,
@@ -342,36 +158,62 @@
          }
       },
       {
-         "id" : "GV_Flag_Buff_Exsang_Bleed_1",
+         "id" : "GV_Flag_Rain_Stress_Bleed_50_20",
          "stat_type" : "hp_dot_bleed_amount_percent",
          "stat_sub_type" : "",
          "amount" : 0.5,
          "remove_if_not_active" : false,
-         "rule_type" : "hpbelow",
+         "rule_type" : "stress_above",
          "is_false_rule" : false,
          "rule_data" : {
-            "float" : 0.8,
+            "float" : 20,
             "string" : ""
          }
       },
       {
-         "id" : "GV_Flag_Buff_Exsang_Bleed_2",
+         "id" : "GV_Flag_Rain_Stress_Bleed_50_40",
          "stat_type" : "hp_dot_bleed_amount_percent",
          "stat_sub_type" : "",
          "amount" : 0.5,
          "remove_if_not_active" : false,
-         "rule_type" : "hpbelow",
+         "rule_type" : "stress_above",
          "is_false_rule" : false,
          "rule_data" : {
-            "float" : 0.6,
+            "float" : 40,
             "string" : ""
          }
       },
       {
-         "id" : "GV_Flag_Buff_Exsang_Bleed_3",
+         "id" : "GV_Flag_Rain_Stress_Bleed_50_60",
          "stat_type" : "hp_dot_bleed_amount_percent",
          "stat_sub_type" : "",
          "amount" : 0.5,
+         "remove_if_not_active" : false,
+         "rule_type" : "stress_above",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 60,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_Flag_Rain_Stress_Bleed_50_80",
+         "stat_type" : "hp_dot_bleed_amount_percent",
+         "stat_sub_type" : "",
+         "amount" : 0.5,
+         "remove_if_not_active" : false,
+         "rule_type" : "stress_above",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 80,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_Flag_Buff_Exsang_Heal_Low_1",
+         "stat_type" : "hp_heal_amount",
+         "stat_sub_type" : "",
+         "amount" : 3,
          "remove_if_not_active" : false,
          "rule_type" : "hpbelow",
          "is_false_rule" : false,
@@ -381,10 +223,10 @@
          }
       },
       {
-         "id" : "GV_Flag_Buff_Exsang_Bleed_4",
-         "stat_type" : "hp_dot_bleed_amount_percent",
+         "id" : "GV_Flag_Buff_Exsang_Heal_Mega_Low_1",
+         "stat_type" : "hp_heal_amount",
          "stat_sub_type" : "",
-         "amount" : 0.5,
+         "amount" : 3,
          "remove_if_not_active" : false,
          "rule_type" : "hpbelow",
          "is_false_rule" : false,
@@ -394,36 +236,10 @@
          }
       },
       {
-         "id" : "GV_Flag_Buff_Exsang_Heal_1",
+         "id" : "GV_Flag_Buff_Exsang_Heal_Low_2",
          "stat_type" : "hp_heal_amount",
          "stat_sub_type" : "",
-         "amount" : 2,
-         "remove_if_not_active" : false,
-         "rule_type" : "hpbelow",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0.8,
-            "string" : ""
-         }
-      },
-      {
-         "id" : "GV_Flag_Buff_Exsang_Heal_2",
-         "stat_type" : "hp_heal_amount",
-         "stat_sub_type" : "",
-         "amount" : 2,
-         "remove_if_not_active" : false,
-         "rule_type" : "hpbelow",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0.6,
-            "string" : ""
-         }
-      },
-      {
-         "id" : "GV_Flag_Buff_Exsang_Heal_3",
-         "stat_type" : "hp_heal_amount",
-         "stat_sub_type" : "",
-         "amount" : 2,
+         "amount" : 4,
          "remove_if_not_active" : false,
          "rule_type" : "hpbelow",
          "is_false_rule" : false,
@@ -433,10 +249,10 @@
          }
       },
       {
-         "id" : "GV_Flag_Buff_Exsang_Heal_4",
+         "id" : "GV_Flag_Buff_Exsang_Heal_Mega_Low_2",
          "stat_type" : "hp_heal_amount",
          "stat_sub_type" : "",
-         "amount" : 2,
+         "amount" : 4,
          "remove_if_not_active" : false,
          "rule_type" : "hpbelow",
          "is_false_rule" : false,
@@ -444,6 +260,60 @@
             "float" : 0.2,
             "string" : ""
          }
+      },
+      {
+         "id" : "GV_Flag_Buff_Exsang_Heal_Low_3",
+         "stat_type" : "hp_heal_amount",
+         "stat_sub_type" : "",
+         "amount" : 5,
+         "remove_if_not_active" : false,
+         "rule_type" : "hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.4,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_Flag_Buff_Exsang_Heal_Mega_Low_3",
+         "stat_type" : "hp_heal_amount",
+         "stat_sub_type" : "",
+         "amount" : 5,
+         "remove_if_not_active" : false,
+         "rule_type" : "hpbelow",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0.2,
+            "string" : ""
+         }
+      },
+      {
+         "id" : "GV_Flag_Extra_Bleed_50",
+         "stat_type" : "hp_dot_bleed_amount_percent",
+         "stat_sub_type" : "",
+         "amount" : 0.5,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         },
+		 "has_description" : false
+      },
+      {
+         "id" : "GV_Flag_Extra_Bleed_100",
+         "stat_type" : "hp_dot_bleed_amount_percent",
+         "stat_sub_type" : "",
+         "amount" : 1.0,
+         "remove_if_not_active" : false,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         },
+		 "has_description" : false
       },
       {
          "id" : "GV_Flag_Buff_Exsang_Bleed",
@@ -459,7 +329,7 @@
          }
       },
       {
-         "id" : "GV_Flag_Buff_Exsang_Bleed_Chance",
+         "id" : "GV_Flag_Buff_Bleed_Chance",
          "stat_type" : "bleed_chance",
          "stat_sub_type" : "",
          "amount" : 0.2,
@@ -471,168 +341,11 @@
             "string" : ""
          }
       },
-      {
-         "id" : "GV_Flag_Buff_Exsang_Extra_Heal",
-         "stat_type" : "hp_heal_amount",
-         "stat_sub_type" : "",
-         "amount" : 2.0,
-         "remove_if_not_active" : false,
-         "rule_type" : "skill",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : "exsanguinate"
-         }
-      },
 	  {
-         "id" : "GV_Flag_DB_Resist_1",
-         "stat_type" : "resistance",
-         "stat_sub_type" : "death_blow",
-         "amount" : 0.08,
-         "remove_if_not_active" : false,
-         "rule_type" : "always",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : ""
-         }
-      },
-      {
-         "id" : "GV_Flag_DB_Resist_2",
-         "stat_type" : "resistance",
-         "stat_sub_type" : "death_blow",
-         "amount" : 0.09,
-         "remove_if_not_active" : false,
-         "rule_type" : "always",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : ""
-         }
-      },
-      {
-         "id" : "GV_Flag_DB_Resist_3",
-         "stat_type" : "resistance",
-         "stat_sub_type" : "death_blow",
-         "amount" : 0.10,
-         "remove_if_not_active" : false,
-         "rule_type" : "always",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : ""
-         }
-      },
-      {
-         "id" : "GV_Flag_DB_Resist_4",
-         "stat_type" : "resistance",
-         "stat_sub_type" : "death_blow",
-         "amount" : 0.11,
-         "remove_if_not_active" : false,
-         "rule_type" : "always",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : ""
-         }
-      },
-      {
-         "id" : "GV_Flag_DB_Resist_5",
-         "stat_type" : "resistance",
-         "stat_sub_type" : "death_blow",
-         "amount" : 0.12,
-         "remove_if_not_active" : false,
-         "rule_type" : "always",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : ""
-         }
-      },
-      {
-         "id" : "GV_Flag_Damage_Reduced_1",
-         "stat_type" : "damage_received_percent",
-         "stat_sub_type" : "",
-         "amount" : -0.10,
-         "remove_if_not_active" : false,
-         "rule_type" : "always",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : ""
-         }
-      },
-      {
-         "id" : "GV_Flag_Damage_Reduced_2",
-         "stat_type" : "damage_received_percent",
-         "stat_sub_type" : "",
-         "amount" : -0.12,
-         "remove_if_not_active" : false,
-         "rule_type" : "always",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : ""
-         }
-      },
-      {
-         "id" : "GV_Flag_Damage_Reduced_3",
-         "stat_type" : "damage_received_percent",
-         "stat_sub_type" : "",
-         "amount" : -0.14,
-         "remove_if_not_active" : false,
-         "rule_type" : "always",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : ""
-         }
-      },
-      {
-         "id" : "GV_Flag_Damage_Reduced_4",
-         "stat_type" : "damage_received_percent",
-         "stat_sub_type" : "",
-         "amount" : -0.16,
-         "remove_if_not_active" : false,
-         "rule_type" : "always",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : ""
-         }
-      },
-      {
-         "id" : "GV_Flag_Damage_Reduced_5",
-         "stat_type" : "damage_received_percent",
-         "stat_sub_type" : "",
-         "amount" : -0.20,
-         "remove_if_not_active" : false,
-         "rule_type" : "always",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : ""
-         }
-      },
-	  {
-         "id" : "GV_Flag_Crits_Reduced_1",
-         "stat_type" : "crit_received_chance",
-         "stat_sub_type" : "",
-         "amount" : -0.10,
-         "remove_if_not_active" : false,
-         "rule_type" : "always",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : ""
-         }
-      },
-	  {
-         "id" : "GV_Flag_Dmg_L",
+         "id" : "GV_Flag_Dmg_L_1",
          "stat_type" : "combat_stat_multiply",
          "stat_sub_type" : "damage_low",
          "amount" : 0.25,
-         "duration" : 3,
          "remove_if_not_active" : true,
          "rule_type" : "always",
          "is_false_rule" : false,
@@ -642,11 +355,114 @@
          }
       },
 	  {
-         "id" : "GV_Flag_Dmg_H",
+         "id" : "GV_Flag_Dmg_L_2",
+         "stat_type" : "combat_stat_multiply",
+         "stat_sub_type" : "damage_low",
+         "amount" : 0.27,
+         "remove_if_not_active" : true,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+	  {
+         "id" : "GV_Flag_Dmg_L_3",
+         "stat_type" : "combat_stat_multiply",
+         "stat_sub_type" : "damage_low",
+         "amount" : 0.29,
+         "remove_if_not_active" : true,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+	  {
+         "id" : "GV_Flag_Dmg_L_4",
+         "stat_type" : "combat_stat_multiply",
+         "stat_sub_type" : "damage_low",
+         "amount" : 0.31,
+         "remove_if_not_active" : true,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+	  {
+         "id" : "GV_Flag_Dmg_L_5",
+         "stat_type" : "combat_stat_multiply",
+         "stat_sub_type" : "damage_low",
+         "amount" : 0.33,
+         "remove_if_not_active" : true,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+	  {
+         "id" : "GV_Flag_Dmg_H_1",
          "stat_type" : "combat_stat_multiply",
          "stat_sub_type" : "damage_high",
          "amount" : 0.25,
-         "duration" : 3,
+         "remove_if_not_active" : true,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+	  {
+         "id" : "GV_Flag_Dmg_H_2",
+         "stat_type" : "combat_stat_multiply",
+         "stat_sub_type" : "damage_high",
+         "amount" : 0.27,
+         "remove_if_not_active" : true,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+	  {
+         "id" : "GV_Flag_Dmg_H_3",
+         "stat_type" : "combat_stat_multiply",
+         "stat_sub_type" : "damage_high",
+         "amount" : 0.29,
+         "remove_if_not_active" : true,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+	  {
+         "id" : "GV_Flag_Dmg_H_4",
+         "stat_type" : "combat_stat_multiply",
+         "stat_sub_type" : "damage_high",
+         "amount" : 0.31,
+         "remove_if_not_active" : true,
+         "rule_type" : "always",
+         "is_false_rule" : false,
+         "rule_data" : {
+            "float" : 0,
+            "string" : ""
+         }
+      },
+	  {
+         "id" : "GV_Flag_Dmg_H_5",
+         "stat_type" : "combat_stat_multiply",
+         "stat_sub_type" : "damage_high",
+         "amount" : 0.33,
          "remove_if_not_active" : true,
          "rule_type" : "always",
          "is_false_rule" : false,
@@ -746,45 +562,6 @@
          }
       },
 	  {
-         "id" : "GV_Flag_Exsang_Bleed_Healer",
-         "stat_type" : "hp_heal_percent",
-         "stat_sub_type" : "",
-         "amount" : 1.0,
-         "remove_if_not_active" : false,
-         "rule_type" : "actorStatus",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : "bleeding"
-         }
-      },
-      {
-         "id" : "GV_Flag_Exsang_Low_Healer",
-         "stat_type" : "hp_heal_percent",
-         "stat_sub_type" : "",
-         "amount" : -0.25,
-         "remove_if_not_active" : false,
-         "rule_type" : "hpabove",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0.4,
-            "string" : ""
-         }
-      },
-      {
-         "id" : "GV_Flag_Exsang_Mega_Low_Healer",
-         "stat_type" : "hp_heal_percent",
-         "stat_sub_type" : "",
-         "amount" : -0.50,
-         "remove_if_not_active" : false,
-         "rule_type" : "hpabove",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0.2,
-            "string" : ""
-         }
-      },
-	  {
          "id" : "GV_Flag_Disable_Exsang",
          "stat_type" : "disable_combat_skill_attribute",
          "stat_sub_type" : "debuff",
@@ -814,22 +591,9 @@
 		 "is_clear_debuff_valid": false
       },
 	  {
-         "id" : "GV_Flag_Calm",
-         "stat_type" : "stress_dmg_received_percent",
-         "stat_sub_type" : "mode",
-         "amount" : -1.0,
-         "remove_if_not_active" : false,
-         "rule_type" : "always",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : ""
-         }
-      },
-	  {
-         "id" : "GV_Tooltip_Flag_Transfer_Dots",
+         "id" : "GV_Tooltip_Flag_Buff_Exsang_Bleed_1",
          "stat_type" : "upgrade_discount",
-         "stat_sub_type" : "gv_flag_transfer_dots",
+         "stat_sub_type" : "gv_flag_buff_exsang_bleed_1",
          "amount" : 1,
          "remove_if_not_active" : false,
          "rule_type" : "always",
@@ -840,9 +604,9 @@
          }
       },
 	  {
-         "id" : "GV_Tooltip_Flag_Buff_Exsang_Bleed",
+         "id" : "GV_Tooltip_Flag_Buff_Exsang_Bleed_2",
          "stat_type" : "upgrade_discount",
-         "stat_sub_type" : "gv_flag_buff_exsang_bleed",
+         "stat_sub_type" : "gv_flag_buff_exsang_bleed_2",
          "amount" : 1,
          "remove_if_not_active" : false,
          "rule_type" : "always",
@@ -853,9 +617,9 @@
          }
       },
 	  {
-         "id" : "GV_Tooltip_Flag_Exsang_Bleed_1",
+         "id" : "GV_Tooltip_Flag_Buff_Exsang_Bleed_3",
          "stat_type" : "upgrade_discount",
-         "stat_sub_type" : "gv_flag_exsang_bleed_1",
+         "stat_sub_type" : "gv_flag_buff_exsang_bleed_3",
          "amount" : 1,
          "remove_if_not_active" : false,
          "rule_type" : "always",
@@ -866,9 +630,9 @@
          }
       },
 	  {
-         "id" : "GV_Tooltip_Flag_Exsang_Bleed_2",
+         "id" : "GV_Tooltip_Flag_Exsang_Self_Effects_1",
          "stat_type" : "upgrade_discount",
-         "stat_sub_type" : "gv_flag_exsang_bleed_2",
+         "stat_sub_type" : "gv_flag_exsang_self_effects_1",
          "amount" : 1,
          "remove_if_not_active" : false,
          "rule_type" : "always",
@@ -879,9 +643,9 @@
          }
       },
 	  {
-         "id" : "GV_Tooltip_Flag_Exsang_Bleed_3",
+         "id" : "GV_Tooltip_Flag_Exsang_Self_Effects_2",
          "stat_type" : "upgrade_discount",
-         "stat_sub_type" : "gv_flag_exsang_bleed_3",
+         "stat_sub_type" : "gv_flag_exsang_self_effects_2",
          "amount" : 1,
          "remove_if_not_active" : false,
          "rule_type" : "always",
@@ -892,9 +656,9 @@
          }
       },
 	  {
-         "id" : "GV_Tooltip_Flag_Exsang_Bleed_4",
+         "id" : "GV_Tooltip_Flag_Exsang_Self_Effects_3",
          "stat_type" : "upgrade_discount",
-         "stat_sub_type" : "gv_flag_exsang_bleed_4",
+         "stat_sub_type" : "gv_flag_exsang_self_effects_3",
          "amount" : 1,
          "remove_if_not_active" : false,
          "rule_type" : "always",
@@ -905,9 +669,9 @@
          }
       },
 	  {
-         "id" : "GV_Tooltip_Flag_Exsang_Bleed_5",
+         "id" : "GV_Tooltip_Flag_Rain_1",
          "stat_type" : "upgrade_discount",
-         "stat_sub_type" : "gv_flag_exsang_bleed_5",
+         "stat_sub_type" : "gv_flag_rain_1",
          "amount" : 1,
          "remove_if_not_active" : false,
          "rule_type" : "always",
@@ -918,9 +682,9 @@
          }
       },
 	  {
-         "id" : "GV_Tooltip_Flag_Exsang_Self_Effects",
+         "id" : "GV_Tooltip_Flag_Rain_2",
          "stat_type" : "upgrade_discount",
-         "stat_sub_type" : "gv_flag_exsang_self_effects",
+         "stat_sub_type" : "gv_flag_rain_2",
          "amount" : 1,
          "remove_if_not_active" : false,
          "rule_type" : "always",
@@ -931,10 +695,10 @@
          }
       },
 	  {
-         "id" : "GV_Tooltip_Flag_Exsang_Mods",
+         "id" : "GV_Tooltip_Flag_Exsang_Tray_Buff_1",
          "stat_type" : "upgrade_discount",
-         "stat_sub_type" : "gv_flag_exsang_mods",
-         "amount" : 1,
+         "stat_sub_type" : "gv_flag_exsang_tray_buff",
+         "amount" : 0.02,
          "remove_if_not_active" : false,
          "rule_type" : "always",
          "is_false_rule" : false,
@@ -944,10 +708,10 @@
          }
       },
 	  {
-         "id" : "GV_Tooltip_Flag_Endure_Mods",
+         "id" : "GV_Tooltip_Flag_Exsang_Tray_Buff_2",
          "stat_type" : "upgrade_discount",
-         "stat_sub_type" : "gv_flag_endure_mods",
-         "amount" : 1,
+         "stat_sub_type" : "gv_flag_exsang_tray_buff",
+         "amount" : 0.03,
          "remove_if_not_active" : false,
          "rule_type" : "always",
          "is_false_rule" : false,
@@ -957,36 +721,10 @@
          }
       },
 	  {
-         "id" : "GV_Tooltip_Flag_Rain",
+         "id" : "GV_Tooltip_Flag_Exsang_Tray_Buff_3",
          "stat_type" : "upgrade_discount",
-         "stat_sub_type" : "gv_flag_rain",
-         "amount" : 1,
-         "remove_if_not_active" : false,
-         "rule_type" : "always",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : ""
-         }
-      },
-	  {
-         "id" : "GV_Tooltip_Suffer_Steal",
-         "stat_type" : "upgrade_discount",
-         "stat_sub_type" : "gv_flag_suffer_steal",
-         "amount" : 1,
-         "remove_if_not_active" : false,
-         "rule_type" : "always",
-         "is_false_rule" : false,
-         "rule_data" : {
-            "float" : 0,
-            "string" : ""
-         }
-      },
-	  {
-         "id" : "GV_Tooltip_Redeem",
-         "stat_type" : "upgrade_discount",
-         "stat_sub_type" : "gv_flag_redeem",
-         "amount" : 1,
+         "stat_sub_type" : "gv_flag_exsang_tray_buff",
+         "amount" : 0.04,
          "remove_if_not_active" : false,
          "rule_type" : "always",
          "is_false_rule" : false,
@@ -995,5 +733,5 @@
             "string" : ""
          }
       }
-	]
+    ]
 }

@@ -15,25 +15,53 @@ armour: .name "flagellant_armour_3" .def 15% .prot 0 .hp 34 .spd 0 .upgradeRequi
 armour: .name "flagellant_armour_4" .def 20% .prot 0 .hp 38 .spd 0 .upgradeRequirementCode 3
 
 // Punish
-combat_skill: .id "punish" .level 0 .type "melee" .atk 90% .dmg 0% .crit 2% .launch 21 .target 12 .is_crit_valid True .effect "GV_Flag_Punish_Bleed_1" "GV_Flag_Buff_Exsang" "GV_Tooltip_Flag_Buff_Exsang" .generation_guaranteed true
+combat_skill: .id "punish" .level 0 .type "melee" .atk 90% .dmg 0% .crit 2% .launch 21 .target 12 .is_crit_valid True .effect "GV_Flag_Punish_Bleed_1" "GV_Flag_Buff_Exsang" .generation_guaranteed true
+combat_skill: .id "punish" .level 1 .type "melee" .atk 95% .dmg 0% .crit 3% .launch 21 .target 12 .is_crit_valid True .effect "GV_Flag_Punish_Bleed_2" "GV_Flag_Buff_Exsang" .generation_guaranteed true
+combat_skill: .id "punish" .level 2 .type "melee" .atk 100% .dmg 0% .crit 4% .launch 21 .target 12 .is_crit_valid True .effect "GV_Flag_Punish_Bleed_3" "GV_Flag_Buff_Exsang" .generation_guaranteed true
+combat_skill: .id "punish" .level 3 .type "melee" .atk 105% .dmg 0% .crit 5% .launch 21 .target 12 .is_crit_valid True .effect "GV_Flag_Punish_Bleed_4" "GV_Flag_Buff_Exsang" .generation_guaranteed true
+combat_skill: .id "punish" .level 4 .type "melee" .atk 110% .dmg 0% .crit 6% .launch 21 .target 12 .is_crit_valid True .effect "GV_Flag_Punish_Bleed_5" "GV_Flag_Buff_Exsang" .generation_guaranteed true
 
 // Exsanguinate
-combat_skill: .id "exsanguinate" .level 0 .type "melee" .atk 95% .dmg -50% .crit 0% .launch 21 .target 12 .is_crit_valid True .effect "GV_Tooltip_Flag_Exsang_Bleed_1" "GV_Flag_Instant_Buffs_1" "GV_Flag_Exsang_Heal_Self" "GV_Flag_Super_Bleed_1" "GV_Flag_Disable_Exsang" "GV_Tooltip_Flag_Exsang_Self_Effects"
+combat_skill: .id "exsanguinate" .level 0 .type "melee" .atk 95% .dmg -50% .crit 0% .launch 21 .target 12 .is_crit_valid True .effect "GV_Flag_Instant_Buffs_1" "GV_Flag_Exsang_Heal_Self_1" "GV_Flag_Super_Bleed_1" "GV_Flag_Disable_Exsang" "GV_Tooltip_Flag_Exsang_Self_Effects_1"
+combat_skill: .id "exsanguinate" .level 1 .type "melee" .atk 100% .dmg -50% .crit 1% .launch 21 .target 12 .is_crit_valid True .effect "GV_Flag_Instant_Buffs_2" "GV_Flag_Exsang_Heal_Self_2" "GV_Flag_Super_Bleed_2" "GV_Flag_Disable_Exsang" "GV_Tooltip_Flag_Exsang_Self_Effects_2"
+combat_skill: .id "exsanguinate" .level 2 .type "melee" .atk 105% .dmg -50% .crit 2% .launch 21 .target 12 .is_crit_valid True .effect "GV_Flag_Instant_Buffs_3" "GV_Flag_Exsang_Heal_Self_2" "GV_Flag_Super_Bleed_3" "GV_Flag_Disable_Exsang" "GV_Tooltip_Flag_Exsang_Self_Effects_2"
+combat_skill: .id "exsanguinate" .level 3 .type "melee" .atk 110% .dmg -50% .crit 3% .launch 21 .target 12 .is_crit_valid True .effect "GV_Flag_Instant_Buffs_4" "GV_Flag_Exsang_Heal_Self_3" "GV_Flag_Super_Bleed_4" "GV_Flag_Disable_Exsang" "GV_Tooltip_Flag_Exsang_Self_Effects_3"
+combat_skill: .id "exsanguinate" .level 4 .type "melee" .atk 115% .dmg -50% .crit 4% .launch 21 .target 12 .is_crit_valid True .effect "GV_Flag_Instant_Buffs_5" "GV_Flag_Exsang_Heal_Self_3" "GV_Flag_Super_Bleed_5" "GV_Flag_Disable_Exsang" "GV_Tooltip_Flag_Exsang_Self_Effects_3"
 
 // Rain of Sorrows
-combat_skill: .id "rain_of_sorrows" .level 0 .type "melee" .atk 90% .dmg -67% .crit 0% .launch 432 .target 234 .is_crit_valid True .effect "GV_Flag_Rain_Instant_Buffs_1" "GV_Tooltip_Flag_Rain" "GV_Flag_Rain_Bleed_1" "GV_Flag_Buff_Exsang" "GV_Tooltip_Flag_Buff_Exsang"
+combat_skill: .id "rain_of_sorrows" .level 0 .type "melee" .atk 90% .dmg -33% .crit 0% .launch 432 .target 234 .is_crit_valid True .effect "GV_Flag_Rain_Instant_Buffs_100" "GV_Tooltip_Flag_Rain_1" "GV_Flag_Rain_Bleed_1" "GV_Flag_Buff_Exsang" 
+combat_skill: .id "rain_of_sorrows" .level 1 .type "melee" .atk 95% .dmg -33% .crit 1% .launch 432 .target 234 .is_crit_valid True .effect "GV_Flag_Rain_Instant_Buffs_100" "GV_Tooltip_Flag_Rain_1" "GV_Flag_Rain_Bleed_2" "GV_Flag_Buff_Exsang"
+combat_skill: .id "rain_of_sorrows" .level 2 .type "melee" .atk 100% .dmg -33% .crit 2% .launch 432 .target 234 .is_crit_valid True .effect "GV_Flag_Rain_Instant_Buffs_50" "GV_Tooltip_Flag_Rain_1" "GV_Flag_Rain_Bleed_3" "GV_Flag_Buff_Exsang"
+combat_skill: .id "rain_of_sorrows" .level 3 .type "melee" .atk 105% .dmg -33% .crit 3% .launch 432 .target 234 .is_crit_valid True .effect "GV_Flag_Rain_Instant_Buffs_50" "GV_Tooltip_Flag_Rain_1" "GV_Flag_Rain_Bleed_4" "GV_Flag_Buff_Exsang"
+combat_skill: .id "rain_of_sorrows" .level 4 .type "melee" .atk 110% .dmg -33% .crit 4% .launch 432 .target 234 .is_crit_valid True .effect "GV_Flag_Rain_Instant_Buffs_100" "GV_Tooltip_Flag_Rain_2" "GV_Flag_Rain_Bleed_5" "GV_Flag_Buff_Exsang"
 
 // Reclaim
 combat_skill: .id "reclaim" .level 0 .launch 4321 .target @1234 .self_target_valid false .is_crit_valid False .effect "GV_Flag_Hot_1" "GV_Flag_Bleed_Self_1" .is_stall_invalidating false
+combat_skill: .id "reclaim" .level 1 .launch 4321 .target @1234 .self_target_valid false .is_crit_valid False .effect "GV_Flag_Hot_1" "GV_Flag_Maybe_Hot" "GV_Flag_Bleed_Self_2" .is_stall_invalidating false
+combat_skill: .id "reclaim" .level 2 .launch 4321 .target @1234 .self_target_valid false .is_crit_valid False .effect "GV_Flag_Hot_2" "GV_Flag_Bleed_Self_3" .is_stall_invalidating false
+combat_skill: .id "reclaim" .level 3 .launch 4321 .target @1234 .self_target_valid false .is_crit_valid False .effect "GV_Flag_Hot_2" "GV_Flag_Maybe_Hot" "GV_Flag_Bleed_Self_4" .is_stall_invalidating false
+combat_skill: .id "reclaim" .level 4 .launch 4321 .target @1234 .self_target_valid false .is_crit_valid False .effect "GV_Flag_Hot_3" "GV_Flag_Bleed_Self_5" .is_stall_invalidating false
 
 // Redeem
 combat_skill: .id "redeem" .level 0 .launch 4321 .target @1234 .is_crit_valid True .effect "GV_Flag_Redeem_Low_Healer" "GV_Flag_Redeem_Heal_Self_1" .is_stall_invalidating false
+combat_skill: .id "redeem" .level 1 .launch 4321 .target @1234 .is_crit_valid True .effect "GV_Flag_Redeem_Low_Healer" "GV_Flag_Redeem_Heal_Self_2" .is_stall_invalidating false
+combat_skill: .id "redeem" .level 2 .launch 4321 .target @1234 .is_crit_valid True .effect "GV_Flag_Redeem_Low_Healer" "GV_Flag_Redeem_Heal_Self_3" .is_stall_invalidating false
+combat_skill: .id "redeem" .level 3 .launch 4321 .target @1234 .is_crit_valid True .effect "GV_Flag_Redeem_Low_Healer" "GV_Flag_Redeem_Heal_Self_4" .is_stall_invalidating false
+combat_skill: .id "redeem" .level 4 .launch 4321 .target @1234 .is_crit_valid True .effect "GV_Flag_Redeem_Low_Healer" "GV_Flag_Redeem_Heal_Self_5" .is_stall_invalidating false
 
 // Endure
-combat_skill: .id "endure" .level 0 .launch 432 .target @1234 .self_target_valid false .is_crit_valid True .effect "GV_Flag_Stress_Heal_1" "GV_Flag_Self_Stress_1" .is_stall_invalidating false
+combat_skill: .id "endure" .level 0 .launch 432 .target @1234 .self_target_valid false .is_crit_valid True .effect "GV_Flag_Stress_Heal_1" "GV_Flag_Self_Stress" .is_stall_invalidating false
+combat_skill: .id "endure" .level 1 .launch 432 .target @1234 .self_target_valid false .is_crit_valid True .effect "GV_Flag_Stress_Heal_2" "GV_Flag_Self_Stress" .is_stall_invalidating false
+combat_skill: .id "endure" .level 2 .launch 432 .target @1234 .self_target_valid false .is_crit_valid True .effect "GV_Flag_Stress_Heal_3" "GV_Flag_Self_Stress" .is_stall_invalidating false
+combat_skill: .id "endure" .level 3 .launch 432 .target @1234 .self_target_valid false .is_crit_valid True .effect "GV_Flag_Stress_Heal_4" "GV_Flag_Self_Stress" .is_stall_invalidating false
+combat_skill: .id "endure" .level 4 .launch 432 .target @1234 .self_target_valid false .is_crit_valid True .effect "GV_Flag_Stress_Heal_5" "GV_Flag_Self_Stress" .is_stall_invalidating false
 
 // Suffer
-combat_skill: .id "suffer" .level 0 .launch 4321 .target .is_crit_valid True .effect "GV_Flag_Self_Stress_Heal_1" "GV_Flag_Self_Damage_1" "GV_Flag_Suffer_Buffs" .is_stall_invalidating false
+combat_skill: .id "suffer" .level 0 .launch 4321 .target .is_crit_valid True .effect "GV_Flag_Self_Stress_Heal_1" "GV_Flag_Self_Damage_1" "GV_Flag_Suffer_Buffs_1" .is_stall_invalidating false
+combat_skill: .id "suffer" .level 1 .launch 4321 .target .is_crit_valid True .effect "GV_Flag_Self_Stress_Heal_2" "GV_Flag_Self_Damage_2" "GV_Flag_Suffer_Buffs_2" .is_stall_invalidating false
+combat_skill: .id "suffer" .level 2 .launch 4321 .target .is_crit_valid True .effect "GV_Flag_Self_Stress_Heal_3" "GV_Flag_Self_Damage_3" "GV_Flag_Suffer_Buffs_3" .is_stall_invalidating false
+combat_skill: .id "suffer" .level 3 .launch 4321 .target .is_crit_valid True .effect "GV_Flag_Self_Stress_Heal_4" "GV_Flag_Self_Damage_4" "GV_Flag_Suffer_Buffs_4" .is_stall_invalidating false
+combat_skill: .id "suffer" .level 4 .launch 4321 .target .is_crit_valid True .effect "GV_Flag_Self_Stress_Heal_5" "GV_Flag_Self_Damage_5" "GV_Flag_Suffer_Buffs_5" .is_stall_invalidating false
 
 combat_move_skill: .id "move" .level 0 .type "move" .move 1 2 .launch 4321
 
@@ -52,6 +80,9 @@ activity_modifier: .override_valid_activity_ids flagellation treatment disease_t
 
 hp_reaction: .hp_ratio 0.40 .is_under true .effects "GV_Flag_Low_HP_Reaction"
 hp_reaction: .hp_ratio 0.20 .is_under true .effects "GV_Flag_Mega_Low_HP_Reaction"
+
+death_reaction: .target_allies true .target_enemies false .effects "Flag Last Gift"
+death_reaction: .target_allies false .target_enemies true .effects "Flag Last Insult"
 
 quirk_modifier: .incompatible_class_ids alcoholism gambler love_interest enlightened god_fearing resolution known_cheat deviant_tastes flagellant unquiet_mind witness faithless bad_gambler skilled_gambler improved_balance meditator calm nymphomania
 generation: .is_generation_enabled true .town_event_dependency "first_flagellant" .number_of_positive_quirks_min 1 .number_of_positive_quirks_max 2 .number_of_negative_quirks_min 1 .number_of_negative_quirks_max 2 .number_of_class_specific_camping_skills 2 .number_of_shared_camping_skills 1 .number_of_random_combat_skills 4 .number_of_cards_in_deck 5 .card_chance 1.0
