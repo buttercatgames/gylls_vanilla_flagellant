@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-	<language id="english">
+	<language id="spanish">
 		<entry id="buff_rule_data_tooltip_exsanguinate"><![CDATA[Exsanguinate]]></entry>
 
 		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_buff_exsang_bleed_1"><![CDATA[{colour_start|buff}Buff Self:{colour_end}

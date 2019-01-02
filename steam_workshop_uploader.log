@@ -8,7 +8,19 @@ Processing Map Files files...
 
 -------------------------------------------------------------------------------
 Running Localization...
-Parsing localization/gv_flagellant.string_table.xml
+Parsing localization/gv_flagellant_brazilian.string_table.xml
+Parsing localization/gv_flagellant_czech.string_table.xml
+Parsing localization/gv_flagellant_english.string_table.xml
+Parsing localization/gv_flagellant_french.string_table.xml
+Parsing localization/gv_flagellant_german.string_table.xml
+Parsing localization/gv_flagellant_italian.string_table.xml
+Parsing localization/gv_flagellant_koreana.string_table.xml
+Parsing localization/gv_flagellant_koreanb.string_table.xml
+Parsing localization/gv_flagellant_overwrites.string_table.xml
+Parsing localization/gv_flagellant_polish.string_table.xml
+Parsing localization/gv_flagellant_russian.string_table.xml
+Parsing localization/gv_flagellant_schinese.string_table.xml
+Parsing localization/gv_flagellant_spanish.string_table.xml
 
 Building Languages
 Exporting .loc files
@@ -23,13 +35,15 @@ No unchanged files detected, directly uploading data directory.
 -------------------------------------------------------------------------------
 Modded files...
 
-heroes/flagellant/flagellant.ability.endure.png
+heroes/flagellant/flagellant.ability.exsang.png
 heroes/flagellant/flagellant.ability.punish.png
 heroes/flagellant/flagellant.ability.rain.png
+heroes/flagellant/flagellant.ability.suffer.png
 heroes/flagellant/flagellant.art.darkest
 heroes/flagellant/flagellant.info.darkest
 raid/camping/crimson_court.camping_skills.json
 shared/buffs/gv_heroes_flagellant.buffs.json
+shared/trait/flagellant.trait_library.json
 effects/gv_heroes_flagellant.effects.darkest
 localization/1408032394_brazilian.loc
 localization/1408032394_czech.loc
@@ -43,11 +57,24 @@ localization/1408032394_polish.loc
 localization/1408032394_russian.loc
 localization/1408032394_schinese.loc
 localization/1408032394_spanish.loc
-localization/gv_flagellant.string_table.xml
+localization/gv_flagellant_brazilian.string_table.xml
+localization/gv_flagellant_czech.string_table.xml
+localization/gv_flagellant_english.string_table.xml
+localization/gv_flagellant_french.string_table.xml
+localization/gv_flagellant_german.string_table.xml
+localization/gv_flagellant_italian.string_table.xml
+localization/gv_flagellant_koreana.string_table.xml
+localization/gv_flagellant_koreanb.string_table.xml
+localization/gv_flagellant_overwrites.string_table.xml
+localization/gv_flagellant_polish.string_table.xml
+localization/gv_flagellant_russian.string_table.xml
+localization/gv_flagellant_schinese.string_table.xml
+localization/gv_flagellant_spanish.string_table.xml
+localization/missing_files.txt
 modfiles.txt
 preview_icon.png
 project.xml
 
-Submitting....................................................................................Submitted.
+Submitting...........................................................................................Submitted.
 Saving project file C:\DarkestDungeon\mods\gylls_vanilla_flagellant\project.xml
 

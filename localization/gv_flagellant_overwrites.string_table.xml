@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<language id="english">
+		<!-- Overwrites -->
+		<entry id="buff_stat_tooltip_hp_heal_amount"><![CDATA[%+d HP {colour_start|healhp}Healed{colour_end}]]></entry>
+		<entry id="effect_health_damage_format"><![CDATA[Suffer %d DMG]]></entry>
+	</language>
+</root>
