@@ -24,7 +24,7 @@ Exsanguinate: {colour_start|bleed}Bleed{colour_end} +4 pts/rd]]></entry>
 		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_rain_1"><![CDATA[+1 pt/rd per 20 {colour_start|stress}Stress{colour_end} {colour_start|skill_unselectable}(80 max){colour_end}]]></entry>
 		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_rain_2"><![CDATA[+2 pts/rd per 20 {colour_start|stress}Stress{colour_end} {colour_start|skill_unselectable}(80 max){colour_end}]]></entry>
 		
-		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_double_damage"><![CDATA[+DMG Doubly Effective]]></entry>
+		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_double_damage"><![CDATA[+DMG {colour_start|buff}Buffs{colour_end} Affect This Skill Twice]]></entry>
 		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_cooldown"><![CDATA[{colour_start|notable}Cooldown: 3 rds{colour_end}]]></entry>
 		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_tooltip_redeem_order"><![CDATA[{colour_start|buff}Buff{colour_end} Applies Before {colour_start|healhp}Heal{colour_end}]]></entry>
 		
