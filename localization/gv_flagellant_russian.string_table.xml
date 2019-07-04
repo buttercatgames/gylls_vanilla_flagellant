@@ -28,6 +28,8 @@ Exsanguinate: {colour_start|bleed}Bleed{colour_end} +4 pts/rd]]></entry>
 		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_cooldown"><![CDATA[{colour_start|notable}Cooldown: 3 rds{colour_end}]]></entry>
 		<entry id="buff_stat_tooltip_upgrade_discount_gv_flag_tooltip_redeem_order"><![CDATA[{colour_start|buff}Buff{colour_end} Applies Before {colour_start|healhp}Heal{colour_end}]]></entry>
 		
+		<entry id="effect_health_damage_format"><![CDATA[Suffer %d DMG]]></entry>
+		
 		<!-- CoM Bleed Buffs -->
 		<entry id="buff_stat_tooltip_hp_dot_bleed_amount_percent"><![CDATA[+%d%% {colour_start|bleed}Bleed{colour_end} Amount]]></entry>
 		<entry id="buff_stat_tooltip_hp_dot_bleed_duration_percent"><![CDATA[+%d%% {colour_start|bleed}Bleed{colour_end} Duration]]></entry>
